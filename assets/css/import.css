@@ -1,0 +1,124 @@
+* {
+  margin: 0%;
+  padding: 0%; }
+
+.container {
+  background-color: white;
+  border-top: 5px solid #572EE5;
+  position: fixed;
+  top: 0%;
+  width: 100%;
+  height: 95px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center; }
+  .container .oculto {
+    display: none; }
+  .container .menu {
+    text-align: center;
+    height: 90vh;
+    position: absolute;
+    width: 100%;
+    margin-top: 650px;
+    background: rgba(87, 46, 229, 0.9); }
+    .container .menu ul .rueda {
+      display: none; }
+    .container .menu ul .linea {
+      width: 30px;
+      height: 1px;
+      background-color: white;
+      margin: auto;
+      margin-top: 10px; }
+    .container .menu ul li {
+      list-style: none;
+      color: white;
+      margin-top: 20px; }
+      .container .menu ul li a {
+        text-decoration: none; }
+  .container figure img {
+    width: 56px;
+    height: 49px;
+    margin-left: 20px; }
+  .container .iconmenuhamburguesa {
+    font-size: 20px;
+    margin-right: 12px; }
+
+@media (min-width: 1024px) {
+  .container .oculto {
+    display: block; }
+  .container .menu {
+    width: auto;
+    position: relative;
+    margin-top: 0%;
+    height: 0%;
+    background: none;
+    margin-right: 8%; }
+    .container .menu ul {
+      justify-content: space-between;
+      display: flex;
+      width: 350px; }
+      .container .menu ul li {
+        color: #572EE5;
+        margin-top: 0px;
+        font-size: 13px; }
+      .container .menu ul .linea {
+        display: none; }
+      .container .menu ul .rueda {
+        display: block;
+        margin-top: -20px; }
+  .container figure img {
+    width: 60px;
+    height: 60px;
+    margin-left: 100px; }
+  .container .iconmenuhamburguesa {
+    display: none; } }
+main {
+  margin-top: 100px; }
+
+h1 {
+  text-align: center;
+  font-size: 35px; }
+
+.divimagen {
+  margin-top: 10px;
+  justify-content: center;
+  display: flex; }
+  .divimagen img {
+    width: 80%; }
+
+.div-buscador-gifos {
+  margin-top: 30px;
+  background: #FFFFFF;
+  border: 3px solid #572EE5;
+  border-radius: 27px 27px;
+  margin: 10px 7%; }
+  .div-buscador-gifos button {
+    font-size: 16px; }
+  .div-buscador-gifos .lupa {
+    width: 15px;
+    margin-left: 220px; }
+
+.divtrending {
+  margin-top: 40px; }
+  .divtrending .trendingh2 {
+    font-size: 20px;
+    text-align: center; }
+  .divtrending h3 {
+    text-align: center; }
+
+.gifosh2 h2 {
+  font-size: 20px;
+  margin-top: 50px; }
+.gifosh2 p {
+  font-size: 14px; }
+
+#misGifos {
+  display: none; }
+
+#circulo {
+  display: none; }
+
+#favorito {
+  display: none; }
+
+/*# sourceMappingURL=import.css.map */
