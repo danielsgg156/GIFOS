@@ -112,6 +112,13 @@ h1 {
 .gifosh2 p {
   font-size: 14px; }
 
+.inspirate {
+  text-align: center;
+  font-size: 35px;
+  color: #572EE5; }
+  .inspirate .acuarela {
+    color: #50E3C2; }
+
 #misGifos {
   display: none; }
 
