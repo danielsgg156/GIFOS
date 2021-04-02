@@ -1,0 +1,24 @@
+footer{
+    height: auto;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    border-bottom: 5px solid #572EE5;
+    h5{
+        font-family: 'Roboto Mono', monospace;
+        font-size: 15px;
+        letter-spacing: 0;
+    }
+    .social-btns{
+        .btn{
+            background: #CDD6E0;
+        }
+    }
+    h5{
+        font-family: 'Roboto Mono', monospace;
+        font-size: 14px;
+        color: #000000;
+        letter-spacing: 0;
+        line-height: 20px;
+    }
+}
