@@ -9,7 +9,7 @@ const navMenu= document.getElementById("navmenu")
 const favorito= document.getElementById("favorito");
 const misGifos= document.getElementById("misGifos");
 const circulo= document.getElementById("circulo");
-const buscador=document.getElementById("sectionBuscar")
+const buscador=document.getElementById("section-1")
 
 
 menuHamburguesa.addEventListener("click",()=>{
