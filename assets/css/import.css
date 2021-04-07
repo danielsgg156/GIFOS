@@ -98,7 +98,7 @@ main {
   border-radius: 27px 27px;
   height: 30px;
   margin: 0px 20px; }
-  .div-buscador-gifos button {
+  .div-buscador-gifos input {
     font-family: 'Roboto Mono', monospace;
     color: #6b7989;
     display: inline;
