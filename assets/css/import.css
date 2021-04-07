@@ -97,8 +97,8 @@ main {
   border: 2px solid  #572EE5;
   border-radius: 27px 27px;
   height: 30px;
-  margin: 0px 20px; }
-  .div-buscador-gifos input {
+  margin: 0px 5%; }
+  .div-buscador-gifos button {
     font-family: 'Roboto Mono', monospace;
     color: #6b7989;
     display: inline;
@@ -112,19 +112,55 @@ main {
 
 .s1trending {
   font-size: 20px;
-  text-align: center; }
+  text-align: center;
+  color: #572EE5;
+  margin-top: 50px;
+  font-family: Montserrat-Bold; }
 
-.s1reactions {
-  margin-top: 40px; }
+.s1reactions h3 {
+  text-align: center;
+  color: #572EE5;
+  font-family: Montserrat-Medium;
+  font-weight: unset;
+  margin: 0px 19%; }
+
+.gifosh2 {
+  background: #F3F5F8; }
+  .gifosh2 h2 {
+    font-size: 20px;
+    margin-top: 80px;
+    text-align: center;
+    color: #572EE5;
+    font-weight: bolder; }
+  .gifosh2 p {
+    margin-top: 10px;
+    font-size: 16px;
+    font-family: Roboto-Regular;
+    text-align: center;
+    color: #000000;
+    font-weight: 600;
+    margin: 0px 20%; }
+
+@media (min-width: 1024px) {
+  main {
+    margin-top: 130px; }
+
+  .inspirate {
+    font-size: 35px;
+    margin: 16px 25%; }
+
+  .divimagen img {
+    width: 399px;
+    height: 190px; }
+
+  .div-buscador-gifos {
+    margin: 0px 273px; }
+
   .s1reactions h3 {
-    text-align: center; }
-
-.gifosh2 h2 {
-  font-size: 20px;
-  margin-top: 50px; }
-.gifosh2 p {
-  font-size: 14px; }
-
+    text-align: center;
+    color: #572EE5;
+    font-family: Montserrat-Medium;
+    font-weight: unset; } }
 #misGifos {
   display: none; }
 
@@ -135,19 +171,27 @@ main {
   display: none; }
 
 footer {
-  height: auto;
+  padding-top: 30px;
+  width: auto;
+  height: 196px;
   text-align: center;
-  display: flex;
-  flex-direction: column;
+  align-items: center;
   border-bottom: 5px solid #572EE5; }
   footer h5 {
+    margin: 47px;
     font-family: 'Roboto Mono', monospace;
     font-size: 15px;
-    letter-spacing: 0; }
-  footer .social-btns .btn {
-    background: #CDD6E0; }
+    letter-spacing: 0;
+    margin-bottom: 15px; }
+  footer .social-btns {
+    display: flex;
+    justify-content: center;
+    justify-content: space-evenly;
+    margin: 0px 35%; }
+    footer .social-btns .fa-instagram, footer .social-btns .fa-twitter, footer .social-btns .fa-facebook {
+      color: #CDD6E0; }
   footer h5 {
-    font-family: 'Roboto Mono', monospace;
+    font-family: 'roboto';
     font-size: 14px;
     color: #000000;
     letter-spacing: 0;

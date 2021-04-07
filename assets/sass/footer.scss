@@ -1,24 +1,50 @@
 footer{
-    height: auto;
+    padding-top: 30px;
+    width: auto;
+    height: 196px;
     text-align: center;
-    display: flex;
-    flex-direction: column;
+    align-items: center; 
     border-bottom: 5px solid #572EE5;
     h5{
+        margin: 47px;
         font-family: 'Roboto Mono', monospace;
         font-size: 15px;
         letter-spacing: 0;
+        margin-bottom: 15px;
     }
     .social-btns{
-        .btn{
-            background: #CDD6E0;
+        display: flex;
+        justify-content: center;
+        justify-content: space-evenly;
+        margin: 0px 35%;
+        .fa-instagram,.fa-twitter,.fa-facebook{
+            color: #CDD6E0;
         }
     }
     h5{
-        font-family: 'Roboto Mono', monospace;
+        font-family: 'roboto';
+
         font-size: 14px;
         color: #000000;
         letter-spacing: 0;
         line-height: 20px;
     }
+}
+@media(min-width:1024px){
+footer{
+    
+    h5{
+        // display: flex;
+    }
+
+    .social-btns{
+        // margin: -40px 40%;
+        
+
+    }
+    h5{
+        // display: flex;
+        // justify-content: flex-end;
+    }    
+}
 }
