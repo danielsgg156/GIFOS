@@ -30,3 +30,21 @@ footer{
         line-height: 20px;
     }
 }
+@media(min-width:1024px){
+footer{
+    
+    h5{
+        // display: flex;
+    }
+
+    .social-btns{
+        // margin: -40px 40%;
+        
+
+    }
+    h5{
+        // display: flex;
+        // justify-content: flex-end;
+    }    
+}
+}
