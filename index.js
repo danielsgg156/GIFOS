@@ -35,9 +35,7 @@ function search() {
     let palabra = document.getElementById("palabra").value;
     const apikey = "hvAnUXZU94XADuL3FIuxO3LjisOHTCRO";
     let searchEndpoint = "https://api.giphy.com/v1/gifs/search?api_key=" + apikey + "&q=" + palabra + "&limit=25&offset=0&rating=g&lang=en";
-    fetch(searchEndpoint)
-        .then(response => response.json())
-        .then(json => console.log(json))
+
     }
 
 
