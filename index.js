@@ -36,7 +36,21 @@ function search() {
     const apikey = "hvAnUXZU94XADuL3FIuxO3LjisOHTCRO";
     let searchEndpoint = "https://api.giphy.com/v1/gifs/search?api_key=" + apikey + "&q=" + palabra + "&limit=25&offset=0&rating=g&lang=en";
 
+    fetch(searchEndpoint)
+        .then(response => response.json())
+        .then(data => crearImg(data));
     }
+
+function crearImg(respuesta) {
+    var urlImg = respuesta.data[0].images.downsized.url;
+    var img = new Image();
+    img.src = urlImg;
+    document.getElementById("images").appendChild(img);
+}   
+    
+    // for( i = 0; i <= 12; i++ ){
+    //     img
+    // }
 
 
 
