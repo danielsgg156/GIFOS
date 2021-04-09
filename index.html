@@ -13,6 +13,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&family=Roboto+Mono:wght@100;200;300;400&display=swap" rel="stylesheet">
     <script src="https://use.fontawesome.com/85dd0c3a0f.js"></script>  
     <script src="https://kit.fontawesome.com/3bc7d78e54.js" ></script>
+    
 </head>
 <body>
     <header>
@@ -46,12 +47,16 @@
                 <img src="./assets/img/ilustra_header.svg" alt="">
             </div>
             <div class="div-buscador-gifos">
-                <button>
-                    Busca GIFOS y más
-                </button>
-                <div>
-                    <img class="lupa" src="./assets/img/icon-search.svg" alt="">
+                <input placeholder="Busca GIFOS y más" id="palabra"></input>
+                <div> 
+                    <button onclick="search()">
+                        <img class="lupa" src="./assets/img/icon-search.svg" alt="img.scoupe">
+                    </button>
                 </div>
+            </div>
+            <div>
+                <h3 id="idshare"></h3>
+                <!-- div -->
             </div>
             <h2 class="s1trending">
                 Trending:
@@ -83,6 +88,7 @@
             </div>
         </section>
     </main>
+    <script type="text/javascript"src="index.js"></script>
     <footer>
         <h5>Compartir en:</h5>
         <div class="social-btns">
@@ -92,6 +98,5 @@
         </div>
         <h5>© GIFOS 2020 All Rights Reserved.</h5>
     </footer>
-    <script type="text/javascript" src="header.js"></script>   
 </body>
 </html>
