@@ -41,12 +41,12 @@ function search() {
         .then(data => crearImg(data));
     }
 
-    function crearImg(respuesta) {
-        var urlImg = respuesta.data[0].images.downsized.url;
-        var img = new Image();
-        img.src = urlImg;
-        document.getElementById("images").appendChild(img);
-    }
+function crearImg(respuesta) {
+    var urlImg = respuesta.data[0].images.downsized.url;
+    var img = new Image();
+    img.src = urlImg;
+    document.getElementById("images").appendChild(img);
+}   
     
     // for( i = 0; i <= 12; i++ ){
     //     img
