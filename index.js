@@ -46,11 +46,21 @@ function crearImg(respuesta) {
     var img = new Image();
     img.src = urlImg;
     document.getElementById("images").appendChild(img);
-}   
+}
+
+let text = document.getElementById("palabra");
+text.addEventListener("keyup",(event) =>{
+    let inputTex = event.path[0].value;
+    document.querySelector("#idshare").innerHTML = inputTex. toUpperCase();
+});
+
+// function setearPalabraEnSearhTxt() {
+//     let palabra = document.getElementById("palabra").value;
+//     document.getElementById("idshare").innerHTML = palabra;
+// }
     
     // for( i = 0; i <= 12; i++ ){
     //     img
     // }
-
 
 

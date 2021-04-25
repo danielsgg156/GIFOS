@@ -1,5 +1,4 @@
 footer {
-  padding-top: 30px;
   width: auto;
   height: 196px;
   text-align: center;
@@ -10,7 +9,8 @@ footer {
     font-family: 'Roboto Mono', monospace;
     font-size: 15px;
     letter-spacing: 0;
-    margin-bottom: 15px; }
+    margin-bottom: 15px;
+    font-weight: 1px; }
   footer .social-btns {
     display: flex;
     justify-content: center;
@@ -19,10 +19,27 @@ footer {
     footer .social-btns .fa-instagram, footer .social-btns .fa-twitter, footer .social-btns .fa-facebook {
       color: #CDD6E0; }
   footer h5 {
-    font-family: 'roboto';
+    font-family: 'Roboto', sans-serif;
     font-size: 14px;
+    font-weight: 200;
     color: #000000;
     letter-spacing: 0;
     line-height: 20px; }
+
+@media (min-width: 1024px) {
+  footer {
+    display: grid;
+    grid-template-columns: 20% 18% 56%;
+    position: relative;
+    top: 94px;
+    height: 116px; }
+    footer .compartirEn {
+      text-align: right; }
+    footer .social-btns {
+      margin-left: 10px; }
+      footer .social-btns a .fa-twitter {
+        color: #572EE5; }
+    footer .rightsReserved {
+      text-align: right; } }
 
 /*# sourceMappingURL=footer.css.map */
