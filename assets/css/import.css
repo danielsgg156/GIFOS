@@ -96,19 +96,39 @@ main {
   background: #FFFFFF;
   border: 2px solid  #572EE5;
   border-radius: 27px 27px;
-  height: 30px;
+  height: 40px;
+  width: 286px;
   margin: 0px 5%; }
-  .div-buscador-gifos button {
+  .div-buscador-gifos .palabra {
+    font-size: large;
+    height: 22px;
+    width: 70%;
+    border: 0;
+    margin: 10px 44px;
+    outline: none; }
+  .div-buscador-gifos div button {
+    display: inline;
+    background: none;
+    border: none; }
+  .div-buscador-gifos ::placeholder {
     font-family: 'Roboto Mono', monospace;
     color: #6b7989;
-    display: inline;
     font-size: 16px;
-    background: none;
-    border: none;
     font-weight: 500; }
   .div-buscador-gifos .lupa {
     width: 20px;
-    margin-left: 220px; }
+    position: relative;
+    left: 252px;
+    bottom: 32px; }
+
+.palabraEnBuscador {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+  color: #572EE5; }
+  .palabraEnBuscador h3 {
+    margin: 100px; }
 
 .s1trending {
   font-size: 20px;
@@ -124,21 +144,29 @@ main {
   font-weight: unset;
   margin: 0px 19%; }
 
+#section-2 {
+  height: 430px;
+  background: #F3F5F8;
+  margin-top: 80px; }
+
 .gifosh2 {
-  background: #F3F5F8; }
-  .gifosh2 h2 {
+  height: 430px; }
+  .gifosh2 .arrows {
+    display: none; }
+  .gifosh2 .trandingGifos {
+    padding-top: 46px; }
+  .gifosh2 div {
     font-size: 20px;
-    margin-top: 80px;
     text-align: center;
     color: #572EE5;
     font-weight: bolder; }
   .gifosh2 p {
-    margin-top: 10px;
+    padding-top: 7px;
     font-size: 16px;
-    font-family: Roboto-Regular;
+    font-family: 'Roboto', sans-serif;
     text-align: center;
     color: #000000;
-    font-weight: 600;
+    font-weight: 300;
     margin: 0px 20%; }
 
 @media (min-width: 1024px) {
@@ -154,13 +182,44 @@ main {
     height: 190px; }
 
   .div-buscador-gifos {
-    margin: 0px 273px; }
+    height: 40px;
+    width: 551px;
+    margin: 0px 230px; }
+    .div-buscador-gifos .palabra {
+      width: 80%; }
+    .div-buscador-gifos .lupa {
+      left: 503px; }
 
   .s1reactions h3 {
     text-align: center;
     color: #572EE5;
-    font-family: Montserrat-Medium;
-    font-weight: unset; } }
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bolder; }
+
+  .gifosh2 .arrows {
+    display: flex;
+    justify-content: space-between;
+    margin: 5%; } }
+@media (min-width: 1440px) {
+  .inspirate {
+    width: 32%;
+    font-size: 37px;
+    margin: 16px 35%; }
+
+  .divimagen img {
+    width: 474px;
+    height: 230px; }
+
+  .div-buscador-gifos {
+    height: 50px;
+    width: 1000px;
+    margin: 0px 235px; }
+    .div-buscador-gifos .palabra {
+      margin: 15px 45px;
+      width: 92%; }
+    .div-buscador-gifos .lupa {
+      left: 70em;
+      bottom: 36px; } }
 #misGifos {
   display: none; }
 
@@ -171,7 +230,6 @@ main {
   display: none; }
 
 footer {
-  padding-top: 30px;
   width: auto;
   height: 196px;
   text-align: center;
@@ -182,7 +240,8 @@ footer {
     font-family: 'Roboto Mono', monospace;
     font-size: 15px;
     letter-spacing: 0;
-    margin-bottom: 15px; }
+    margin-bottom: 15px;
+    font-weight: 1px; }
   footer .social-btns {
     display: flex;
     justify-content: center;
@@ -191,10 +250,27 @@ footer {
     footer .social-btns .fa-instagram, footer .social-btns .fa-twitter, footer .social-btns .fa-facebook {
       color: #CDD6E0; }
   footer h5 {
-    font-family: 'roboto';
+    font-family: 'Roboto', sans-serif;
     font-size: 14px;
+    font-weight: 200;
     color: #000000;
     letter-spacing: 0;
     line-height: 20px; }
+
+@media (min-width: 1024px) {
+  footer {
+    display: grid;
+    grid-template-columns: 20% 18% 56%;
+    position: relative;
+    top: 94px;
+    height: 116px; }
+    footer .compartirEn {
+      text-align: right; }
+    footer .social-btns {
+      margin-left: 10px; }
+      footer .social-btns a .fa-twitter {
+        color: #572EE5; }
+    footer .rightsReserved {
+      text-align: right; } }
 
 /*# sourceMappingURL=import.css.map */
