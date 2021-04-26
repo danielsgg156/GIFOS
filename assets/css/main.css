@@ -126,6 +126,9 @@ main {
     display: flex;
     justify-content: space-between;
     margin: 5%; } }
+#idshare {
+  text-transform: capitalize; }
+
 @media (min-width: 1440px) {
   .inspirate {
     width: 32%;
