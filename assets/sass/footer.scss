@@ -32,11 +32,6 @@ footer{
 }
 @media(min-width:1024px){
 footer{
-<<<<<<< HEAD
-    
-    h5{
-       
-=======
     display: grid;
     grid-template-columns: 20% 18% 56%;
     position: relative;
@@ -44,7 +39,6 @@ footer{
     height: 116px;
     .compartirEn{
         text-align: right;
->>>>>>> black
     }
 
     .social-btns{
