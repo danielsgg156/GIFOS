@@ -37,7 +37,8 @@ secciones(btnFavoritos, "click", favorito, circulo, buscador, misGifos);
 function search() {
     let palabra = document.getElementById("palabra").value;
     const apikey = "hvAnUXZU94XADuL3FIuxO3LjisOHTCRO";
-    let searchEndpoint = "https://api.giphy.com/v1/gifs/search?api_key=" + apikey + "&q=" + palabra + "&limit="+ limit +"&offset=0&rating=g&lang=en";
+    let searchEndpoint = "https://api.giphy.com/v1/gifs/search?api_key=" + apikey + "&q=" + palabra +
+     "&limit="+ limit +"&offset=0&rating=g&lang=en";
 
     fetch(searchEndpoint)
         .then(response => response.json())
@@ -46,6 +47,7 @@ function search() {
 
 function crearImg(respuesta) {
     clearHtml();
+    // if ( limit > 12)
     for(let i= 0; i<limit; i++){
         var urlImg = respuesta.data[i].images.downsized.url;
         var img = new Image();
@@ -73,13 +75,12 @@ text.addEventListener("keyup",(event) =>{
       }
 });
 
-// function setearPalabraEnSearhTxt() {
-//     let palabra = document.getElementById("palabra").value;
-//     document.getElementById("idshare").innerHTML = palabra;
-// }
-    
-//     for( i = 0; i <= 12; i++ ){
-//         img
-//     }
+function verMas() {
+    var images = document.getElementById("images");
+    var limitAnterior = limit;
+    limit = limit + 12;
+    search();
+
+}
 
 

@@ -45,19 +45,17 @@
                 <img src="./assets/img/ilustra_header.svg" alt="">
             </div>
             <div class="div-buscador-gifos">
-                <div> 
-                    <button onclick="search()">
-                        <img class="lupa" src="./assets/img/icon-search.svg" alt="img.scoupe">
-                    </button>
-                </div>
-                <div>
-                    <input placeholder="Busca GIFOS y más" id="palabra" class="palabra" type="search" ></input>
+                <img class="lupa" src="./assets/img/icon-search.svg" alt="img.scoupe">
+                <div class="divInput">
+                    <input placeholder="Busca GIFOS y más" id="palabra" class="palabra" type="search" onclick="search()"></input>
                 </div>
             </div>
             <div class="palabraEnBuscador">
                 <h3 class= "idshare" id="idshare"></h3>
                 <div id="images"></div>
+                <button id="verMas" onclick="verMas()">Ver Más</button>
             </div>
+            
             <h2 class="s1trending">
                 Trending:
             </h2>
