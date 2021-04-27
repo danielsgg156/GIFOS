@@ -1,200 +1,83 @@
-* {
-  margin: 0%;
-  padding: 0%; }
+/*
+Error: Invalid CSS after "    display: grid": expected "{", was ";"
+        on line 40 of C:/Users/Usuario/OneDrive/COLABORACION GIFOS ACAMICA/GIFOS/assets/sass/footer.scss
+        from line 6 of C:\Users\Usuario\OneDrive\COLABORACION GIFOS ACAMICA\GIFOS\assets\sass\import.scss
 
-.container {
-  background-color: white;
-  border-top: 5px solid #572EE5;
-  position: fixed;
-  top: 0%;
-  width: 100%;
-  height: 95px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center; }
-  .container .oculto {
-    display: none; }
-  .container .menu {
-    text-align: center;
-    height: 90vh;
-    position: absolute;
-    width: 100%;
-    margin-top: 650px;
-    background: rgba(87, 46, 229, 0.9); }
-    .container .menu ul .rueda {
-      display: none; }
-    .container .menu ul .linea {
-      width: 30px;
-      height: 1px;
-      background-color: white;
-      margin: auto;
-      margin-top: 10px; }
-    .container .menu ul li {
-      list-style: none;
-      color: white;
-      margin-top: 20px; }
-      .container .menu ul li a {
-        text-decoration: none; }
-  .container figure img {
-    width: 56px;
-    height: 49px;
-    margin-left: 20px; }
-  .container .iconmenuhamburguesa {
-    font-size: 20px;
-    margin-right: 12px; }
+35: <<<<<<< HEAD
+36:     
+37:     h5{
+38:        
+39: =======
+40:     display: grid;
+41:     grid-template-columns: 20% 18% 56%;
+42:     position: relative;
+43:     top: 94px;
+44:     height: 116px;
+45:     .compartirEn{
 
-@media (min-width: 1024px) {
-  .container .oculto {
-    display: block; }
-  .container .menu {
-    width: auto;
-    position: relative;
-    margin-top: 0%;
-    height: 0%;
-    background: none;
-    margin-right: 8%; }
-    .container .menu ul {
-      justify-content: space-between;
-      display: flex;
-      width: 350px; }
-      .container .menu ul li {
-        color: #572EE5;
-        margin-top: 0px;
-        font-size: 13px; }
-      .container .menu ul .linea {
-        display: none; }
-      .container .menu ul .rueda {
-        display: block;
-        margin-top: -20px; }
-  .container figure img {
-    width: 60px;
-    height: 60px;
-    margin-left: 100px; }
-  .container .iconmenuhamburguesa {
-    display: none; } }
-main {
-  margin-top: 100px; }
-
-.inspirate {
-  text-align: center;
-  font-size: 35px;
-  color: #572EE5; }
-  .inspirate .acuarela {
-    display: inline-block;
-    color: #50E3C2; }
-
-.divimagen {
-  margin-top: 10px;
-  justify-content: center;
-  display: flex; }
-  .divimagen img {
-    width: 240px;
-    height: 117px; }
-
-.div-buscador-gifos {
-  justify-content: space-around;
-  background: #FFFFFF;
-  border: 2px solid  #572EE5;
-  border-radius: 27px 27px;
-  height: 30px;
-  margin: 0px 5%; }
-  .div-buscador-gifos button {
-    font-family: 'Roboto Mono', monospace;
-    color: #6b7989;
-    display: inline;
-    font-size: 16px;
-    background: none;
-    border: none;
-    font-weight: 500; }
-  .div-buscador-gifos .lupa {
-    width: 20px;
-    margin-left: 220px; }
-
-.s1trending {
-  font-size: 20px;
-  text-align: center;
-  color: #572EE5;
-  margin-top: 50px;
-  font-family: Montserrat-Bold; }
-
-.s1reactions h3 {
-  text-align: center;
-  color: #572EE5;
-  font-family: Montserrat-Medium;
-  font-weight: unset;
-  margin: 0px 19%; }
-
-.gifosh2 {
-  background: #F3F5F8; }
-  .gifosh2 h2 {
-    font-size: 20px;
-    margin-top: 80px;
-    text-align: center;
-    color: #572EE5;
-    font-weight: bolder; }
-  .gifosh2 p {
-    margin-top: 10px;
-    font-size: 16px;
-    font-family: Roboto-Regular;
-    text-align: center;
-    color: #000000;
-    font-weight: 600;
-    margin: 0px 20%; }
-
-@media (min-width: 1024px) {
-  main {
-    margin-top: 130px; }
-
-  .inspirate {
-    font-size: 35px;
-    margin: 16px 25%; }
-
-  .divimagen img {
-    width: 399px;
-    height: 190px; }
-
-  .div-buscador-gifos {
-    margin: 0px 273px; }
-
-  .s1reactions h3 {
-    text-align: center;
-    color: #572EE5;
-    font-family: Montserrat-Medium;
-    font-weight: unset; } }
-#misGifos {
-  display: none; }
-
-#circulo {
-  display: none; }
-
-#favorito {
-  display: none; }
-
-footer {
-  padding-top: 30px;
-  width: auto;
-  height: 196px;
-  text-align: center;
-  align-items: center;
-  border-bottom: 5px solid #572EE5; }
-  footer h5 {
-    margin: 47px;
-    font-family: 'Roboto Mono', monospace;
-    font-size: 15px;
-    letter-spacing: 0;
-    margin-bottom: 15px; }
-  footer .social-btns {
-    display: flex;
-    justify-content: center;
-    justify-content: space-evenly;
-    margin: 0px 35%; }
-    footer .social-btns .fa-instagram, footer .social-btns .fa-twitter, footer .social-btns .fa-facebook {
-      color: #CDD6E0; }
-  footer h5 {
-    font-family: 'roboto';
-    font-size: 14px;
-    color: #000000;
-    letter-spacing: 0;
-    line-height: 20px; }
-
-/*# sourceMappingURL=import.css.map */
+Backtrace:
+C:/Users/Usuario/OneDrive/COLABORACION GIFOS ACAMICA/GIFOS/assets/sass/footer.scss:40
+C:\Users\Usuario\OneDrive\COLABORACION GIFOS ACAMICA\GIFOS\assets\sass\import.scss:6
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:1278:in `expected'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:1208:in `expected'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:1203:in `tok!'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:677:in `block'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:747:in `declaration_or_ruleset'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:697:in `block_child'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:686:in `block_contents'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:678:in `block'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:747:in `declaration_or_ruleset'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:697:in `block_child'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:686:in `block_contents'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:678:in `block'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:747:in `declaration_or_ruleset'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:697:in `block_child'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:686:in `block_contents'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:678:in `block'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:421:in `media_directive'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:234:in `special_directive'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:209:in `directive'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:696:in `block_child'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:689:in `block_contents'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:137:in `stylesheet'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:41:in `parse'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/engine.rb:414:in `_to_tree'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/engine.rb:321:in `to_tree'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:327:in `block in visit_import'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:88:in `block in with_import'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:135:in `with_frame'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:88:in `with_import'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:326:in `visit_import'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/base.rb:36:in `visit'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:162:in `block in visit'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:79:in `block in with_base'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:135:in `with_frame'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:79:in `with_base'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:162:in `visit'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/base.rb:52:in `block in visit_children'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/base.rb:52:in `map'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/base.rb:52:in `visit_children'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:171:in `block in visit_children'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:183:in `with_environment'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:170:in `visit_children'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/base.rb:36:in `block in visit'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:190:in `visit_root'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/base.rb:36:in `visit'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:161:in `visit'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:10:in `visit'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/root_node.rb:36:in `css_tree'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/root_node.rb:29:in `render_with_sourcemap'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/engine.rb:389:in `_render_with_sourcemap'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/engine.rb:307:in `render_with_sourcemap'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/exec/sass_scss.rb:391:in `run'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/exec/sass_scss.rb:63:in `process_result'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/exec/base.rb:52:in `parse'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/exec/base.rb:19:in `parse!'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/bin/sass:13:in `<top (required)>'
+C:/Program Files (x86)/Koala/bin/sass:22:in `load'
+C:/Program Files (x86)/Koala/bin/sass:22:in `<main>'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Error: Invalid CSS after \"    display: grid\": expected \"{\", was \";\"\A         on line 40 of C:/Users/Usuario/OneDrive/COLABORACION GIFOS ACAMICA/GIFOS/assets/sass/footer.scss\A         from line 6 of C:\Users\Usuario\OneDrive\COLABORACION GIFOS ACAMICA\GIFOS\assets\sass\import.scss\A \A 35: <<<<<<< HEAD\A 36:     \A 37:     h5{\A 38:        \A 39: =======\A 40:     display: grid;\A 41:     grid-template-columns: 20% 18% 56%;\A 42:     position: relative;\A 43:     top: 94px;\A 44:     height: 116px;\A 45:     .compartirEn{"; }

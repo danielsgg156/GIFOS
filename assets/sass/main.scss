@@ -23,25 +23,49 @@ main{
     }
 }
 .div-buscador-gifos{
-    
     justify-content: space-around;
     background: #FFFFFF;
     border: 2px solid  #572EE5;
     border-radius: 27px 27px;
-    height: 30px;
+    height: 40px;
+    width: 286px;
     margin: 0px 5%;
-    button{
+    .palabra{
+        font-size:large;
+        height: 22px;
+        width: 70%;
+        border: 0;
+        margin: 10px 44px;
+        outline: none;
+    }
+    div{
+        button{
+            display: inline;
+            background:none;
+            border: none;
+        }
+    }
+    ::placeholder{
         font-family: 'Roboto Mono', monospace;
         color: #6b7989;
-        display: inline;
         font-size: 16px;
-        background:none;
-        border: none;
-        font-weight: 500;      
+        font-weight: 500;
     }
     .lupa{
         width: 20px;
-        margin-left: 220px;    
+        position: relative;
+        left: 252px;
+        bottom: 32px;    
+    }
+}
+.palabraEnBuscador{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    color: #572EE5;
+    h3{
+        margin: 100px;
     }
 }
 .s1trending{
@@ -62,25 +86,41 @@ main{
         margin: 0px 19%;
     } 
 }
-.gifosh2{
+
+#section-2{
+    
+    height: 430px;
     background: #F3F5F8;
-    h2{
+    margin-top: 80px;
+}
+.gifosh2{
+    height: 430px;
+    // background: yellow ;
+    .arrows{
+        display: none;
+    }
+    .trandingGifos{
+        padding-top: 46px;
+    }
+    div{   
      font-size: 20px;
-     margin-top: 80px;
+    //  margin-top: 80px;
      text-align: center;
      color: #572EE5;
      font-weight: bolder;   
     }
     p{
-        margin-top: 10px;
+        padding-top: 7px;
         font-size: 16px;
-        font-family:Roboto-Regular;
+        font-family: 'Roboto', sans-serif;
         text-align: center;
         color: #000000;
-        font-weight: 600;
+        font-weight: 300;
         margin: 0px 20%;
     }
 }
+
+
 @media(min-width:1024px){
 main{
     margin-top: 130px;
@@ -97,12 +137,14 @@ main{
     }
 } 
 .div-buscador-gifos{
-    margin: 0px 273px;
-    button{
-
-    }
+    height: 40px;
+    width: 551px;
+    margin: 0px 230px;
+    .palabra{
+        width: 80%;
+    } 
     .lupa{
-
+        left: 503px;
     }
 } 
 .s1reactions{
@@ -110,19 +152,55 @@ main{
     h3{
         text-align: center;
         color: #572EE5;
-        font-family: Montserrat-Medium;
-        font-weight: unset;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: bolder;
     } 
 
 }
 .gifosh2{
-    p{
-    }
-    .right{
+    .arrows{
+        display: flex;
+        justify-content: space-between;
+        margin: 5%;
 
-    }
-    .left{
+        .left{
 
+        }
+        .right{
+    
+        }   
     }
+
 }
+}
+
+#idshare{
+    text-transform: capitalize;
+}
+
+@media(min-width:1440px){
+    .inspirate{
+        width: 32%;
+        font-size: 37px;
+        margin: 16px 35%;
+    }
+    .divimagen{
+        img{
+            width: 474px;
+            height: 230px;
+        }
+    } 
+    .div-buscador-gifos{
+        height: 50px;
+        width: 1000px;
+        margin: 0px 235px;
+        .palabra{
+            margin: 15px 45px;
+            width: 92%;
+        } 
+        .lupa{
+            left: 70em;
+            bottom: 36px;
+        }
+    } 
 }
