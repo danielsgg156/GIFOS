@@ -24,6 +24,7 @@ main{
     }
 }
 
+
 .div-buscador-gifos{
     justify-content: space-around;
     background: #FFFFFF;
@@ -124,39 +125,92 @@ main{
     } 
 }
 
-#section-2{
+#idshare{
+    text-transform: capitalize;
+}
+
+#section-3{
     
     height: 430px;
     background: #F3F5F8;
     margin-top: 80px;
 }
-.gifosh2{
-    height: 430px;
-    // background: yellow ;
+.titles-s3{
+    height: 30px;
     .arrows{
         display: none;
     }
-    .trandingGifos{
+    .trendingGifos{
         padding-top: 46px;
-    }
-    div{   
-     font-size: 20px;
-    //  margin-top: 80px;
-     text-align: center;
-     color: #572EE5;
-     font-weight: bolder;   
-    }
-    p{
-        padding-top: 7px;
-        font-size: 16px;
-        font-family: 'Roboto', sans-serif;
+        font-size: 20px;
         text-align: center;
-        color: #000000;
-        font-weight: 300;
-        margin: 0px 20%;
+        color: #572EE5;
+        font-weight: bolder;
+    }
+    .ultimosGifos{  
+     padding-top: 7px;
+     font-size: 16px;
+     font-family: 'Roboto', sans-serif;
+     text-align: center;
+     color: #000000;
+     font-weight: 300;
+     margin: 0px 20%;
     }
 }
 
+.container-slider{
+    // width: 90%;
+    // max-width: 900px;
+    // margin: auto;
+    // overflow: hidden;
+    // position: relative;
+    .slider{
+        // display: flex;
+        // width: 400%;
+        // height: 400px;
+        .slider__section{
+            // width: 100%;
+            .slider__img{
+                height: 187px;
+                width: 243px;
+                // display: block;
+                // width: 100%;
+                // height: 100%;
+                // object-fit: cover;
+            }
+        }
+    }
+}
+
+
+.slider__btn{
+    // position: absolute;
+    // width: 40px;
+    // height: 40px;
+    // border: 1px solid #572EE5;
+    // top: 50%;
+    // transform: translateY(-50%);
+    // font-family: monospace;
+    // font-size: 30px;
+    // text-align: center;
+    // font-weight: bold;
+    // cursor: pointer;
+}
+
+.slider__btn:hover{
+    // background: #572EE5;
+}
+
+.slider--btn--left{
+     
+}
+
+.slider--btn--rigth{
+    right: 10px;
+}
+
+
+// desde aquí se empiezan a editar lo media 1024px
 
 @media(min-width:1024px){
 main{
@@ -211,9 +265,13 @@ main{
 }
 }
 
-#idshare{
-    text-transform: capitalize;
-}
+
+
+
+
+// desde aquí se empiezan a editar lo media 1440px
+
+
 
 @media(min-width:1440px){
     .inspirate{

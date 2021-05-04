@@ -33,6 +33,7 @@ function secciones(ele, funcion, sect1, sect2, sect3, sect4) {
 secciones(logo, "click", buscador, misGifos, circulo, favorito);
 secciones(btnMisGifos, "click", misGifos, buscador, circulo, favorito);
 secciones(btnFavoritos, "click", favorito, circulo, buscador, misGifos);
+secciones(btnRueda, "click", circulo, favorito, buscador, misGifos);
 
 function search() {
     let palabra = document.getElementById("palabra").value;

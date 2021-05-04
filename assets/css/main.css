@@ -99,23 +99,25 @@ main {
   font-weight: unset;
   margin: 0px 19%; }
 
-#section-2 {
+#idshare {
+  text-transform: capitalize; }
+
+#section-3 {
   height: 430px;
   background: #F3F5F8;
   margin-top: 80px; }
 
-.gifosh2 {
-  height: 430px; }
-  .gifosh2 .arrows {
+.titles-s3 {
+  height: 30px; }
+  .titles-s3 .arrows {
     display: none; }
-  .gifosh2 .trandingGifos {
-    padding-top: 46px; }
-  .gifosh2 div {
+  .titles-s3 .trendingGifos {
+    padding-top: 46px;
     font-size: 20px;
     text-align: center;
     color: #572EE5;
     font-weight: bolder; }
-  .gifosh2 p {
+  .titles-s3 .ultimosGifos {
     padding-top: 7px;
     font-size: 16px;
     font-family: 'Roboto', sans-serif;
@@ -123,6 +125,13 @@ main {
     color: #000000;
     font-weight: 300;
     margin: 0px 20%; }
+
+.container-slider .slider .slider__section .slider__img {
+  height: 187px;
+  width: 243px; }
+
+.slider--btn--rigth {
+  right: 10px; }
 
 @media (min-width: 1024px) {
   main {
@@ -155,9 +164,6 @@ main {
     display: flex;
     justify-content: space-between;
     margin: 5%; } }
-#idshare {
-  text-transform: capitalize; }
-
 @media (min-width: 1440px) {
   .inspirate {
     width: 32%;
