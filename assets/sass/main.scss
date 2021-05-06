@@ -248,23 +248,148 @@ main{
     } 
 
 }
-.gifosh2{
-    .arrows{
-        display: flex;
-        justify-content: space-between;
-        margin: 5%;
-
-        .left{
-
+#section-2{
+    #circulo{
+        grid-template-columns: 1fr 1fr 1fr ;
+        .camara{
+            display: flex;
+            justify-content: flex-end;
+            }
+            .lente{
+                width: 95px;
+            }
+            .flash{
+                width: 50px;
+                height: 400px;
+                
+            }
         }
-        .right{
-    
-        }   
+        .mitad{  
+            width: 640px;
+            height: 400px;
+            // background: rgb(236, 229, 15);
+            .marco{
+                margin: auto;
+                height: 324px;
+                width: 640px;
+                border: 1px solid #572EE5;
+                
+                .intoMarco-1{
+                    padding-top: 7%;
+                    margin: auto;
+                    // background: gray;
+                    width: 550px;
+                    height: 70px;
+                    font-family: 'Montserrat', sans-serif;
+                    font-size: 25px;
+                    font-weight: bold;
+                    color: #572EE5;
+                    text-align: center;
+                    line-height: 35px;
+                    h1{
+                        color: #50E3C2;
+                        display: inline;
+                    }
+                }
+                .intoMarco-2{
+                    // background: red;
+                    width: 446px;
+                    padding-top: 1%;
+                    height: 70px;
+                    margin: auto;
+                    font-family: 'Roboto', sans-serif;
+                    font-size: 16px;
+                    color: #000000;
+                    text-align: center;
+                    line-height: 29px;
+                }
+                .box{
+                    display: flex;
+                    justify-content: space-between;
+                    .box-1, .box-2, .box-3, .box-4{
+                        display: flex;
+                        height: 25px;
+                        width: 27px;
+                    }
+                    .box-1, .box-2{
+                        margin: 20px 20px;
+                        border-top: 1px solid #50E3C2;
+                        
+                    }
+                    .box-3, .box-4{
+                        margin: 20px 20px ;
+                        border-bottom: 1px solid #50E3C2;
+                    }
+                    .box-1, .box-3{
+                        
+                        border-left: 1px solid #50E3C2;
+                    }
+
+                    .box-2, .box-4{
+                        border-right: 1px solid #50E3C2;
+                        
+                    }
+                }
+            }
+            .steps{
+                display: flex;
+                justify-content: space-evenly;
+                width: 25%;
+                margin: 0px 265px;
+                padding-top: 13px;
+                margin-bottom: 15px;
+                .boton-1, .boton-2, .boton-3{
+                    color: #572EE5;
+                    button{
+                    font-family: 'Roboto';
+                    font-weight: 200;
+                    font-size: 18px;
+                    text-align: center;
+                    border-radius: 16px;
+                    width: 32px;
+                    height: 32px;
+                    color: #572EE5;
+                    border: 1px solid #572EE5;
+                    }
+                }
+            }
+            .emptyPurple{
+                height: 6.9px;
+                width: 700px;
+                margin: 0px 0px 20px -30px;
+                background:#572EE5;
+                border-radius: 5px;
+            }
+            .comenzar{
+                display: flex ;
+                justify-content: center;
+                .btnComenzar{
+                    border: 1px solid #572EE5;
+                    border-radius: 25px;
+                    width: 107px;
+                    height: 34px;
+                    font-size: 12px;
+                    font-family: 'Montserrat';
+                    font-weight: bold;
+                    color: #572EE5;
+                }
+            }    
+        }
+        .cintaFotografica{
+            display: flex;
+            justify-content: center;
+            align-items: flex-end;
+            img{
+                height: 112px;
+                width: 135px;
+            }
+        }
     }
-
-}
 }
 
+#section-3{
+    display: none;
+}
 
 
 

@@ -24,7 +24,7 @@ menuHamburguesa.addEventListener("click", () => {
 
 function secciones(ele, funcion, sect1, sect2, sect3, sect4) {
     ele.addEventListener(funcion, () => {
-        sect1.style.display = "block";
+        sect1.style.display = "grid";
         sect2.style.display = "none";
         sect3.style.display = "none";
         sect4.style.display = "none";
