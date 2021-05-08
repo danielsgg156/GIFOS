@@ -119,7 +119,7 @@ main{
     h3{
         text-align: center;
         color: #572EE5;
-        font-family: Montserrat-Medium;
+        font-family:'Montserrat-Medium';
         font-weight: unset;
         margin: 0px 19%;
     } 
@@ -249,6 +249,75 @@ main{
 
 }
 #section-2{
+    #favorito{
+        .like{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .emoticonHeartSmall{
+            img{
+                width: 28px;
+                height: 21px;
+            }
+        }
+        .favorito{
+            font-family: 'Montserrat-Bold';
+            font-size: 25px;
+            color: #572EE5;
+            font-weight: 600;
+            height: 100px;
+        }
+        .emoticonHeartBig{
+            img{
+                width: 90px;
+                height: 130px;
+            }
+        }
+        .save{
+            font-family: 'Montserrat-Bold';
+            font-size: 22px;
+            color: #50E3C2;
+            width: 345px;
+            height: 72px;
+            display: flex;
+            text-align: center;
+        }
+    }
+    #misGifos{
+        .crear{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            .emoticonSmall{
+                img{
+                    width: 24px;
+                    height: 22px;
+                }
+            }
+            .misGifos{
+                font-family: 'Montserrat-Bold';
+                font-size: 25px;
+                color: #572EE5;
+                line-height: 30px;
+                font-weight: 900;
+                height: 100px;
+            }
+            .emoticonBig{
+                height: 160px;
+               img{
+                width: 100px;
+                height: 150px;
+               }
+            }
+            .animate{
+                font-family: 'Montserrat-Bold';
+                font-size: 22px;
+                color: #50E3C2;
+            }
+        }             
+    }
+   
     #circulo{
         grid-template-columns: 1fr 1fr 1fr ;
         .camara{
@@ -384,11 +453,7 @@ main{
                 width: 135px;
             }
         }
-    }
-}
-
-#section-3{
-    display: none;
+    }  
 }
 
 

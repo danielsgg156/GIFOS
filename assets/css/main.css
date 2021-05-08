@@ -95,7 +95,7 @@ main {
 .s1reactions h3 {
   text-align: center;
   color: #572EE5;
-  font-family: Montserrat-Medium;
+  font-family: 'Montserrat-Medium';
   font-weight: unset;
   margin: 0px 19%; }
 
@@ -160,6 +160,53 @@ main {
     font-family: 'Montserrat', sans-serif;
     font-weight: bolder; }
 
+  #section-2 #favorito .like {
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+  #section-2 #favorito .emoticonHeartSmall img {
+    width: 28px;
+    height: 21px; }
+  #section-2 #favorito .favorito {
+    font-family: 'Montserrat-Bold';
+    font-size: 25px;
+    color: #572EE5;
+    font-weight: 600;
+    height: 100px; }
+  #section-2 #favorito .emoticonHeartBig img {
+    width: 90px;
+    height: 130px; }
+  #section-2 #favorito .save {
+    font-family: 'Montserrat-Bold';
+    font-size: 22px;
+    color: #50E3C2;
+    width: 345px;
+    height: 72px;
+    display: flex;
+    text-align: center; }
+  #section-2 #misGifos .crear {
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+    #section-2 #misGifos .crear .emoticonSmall img {
+      width: 24px;
+      height: 22px; }
+    #section-2 #misGifos .crear .misGifos {
+      font-family: 'Montserrat-Bold';
+      font-size: 25px;
+      color: #572EE5;
+      line-height: 30px;
+      font-weight: 900;
+      height: 100px; }
+    #section-2 #misGifos .crear .emoticonBig {
+      height: 160px; }
+      #section-2 #misGifos .crear .emoticonBig img {
+        width: 100px;
+        height: 150px; }
+    #section-2 #misGifos .crear .animate {
+      font-family: 'Montserrat-Bold';
+      font-size: 22px;
+      color: #50E3C2; }
   #section-2 #circulo {
     grid-template-columns: 1fr 1fr 1fr; }
     #section-2 #circulo .camara {
@@ -263,9 +310,6 @@ main {
     #section-2 .cintaFotografica img {
       height: 112px;
       width: 135px; } }
-#section-3 {
-  display: none; }
-
 @media (min-width: 1440px) {
   .inspirate {
     width: 32%;
