@@ -158,56 +158,65 @@ main{
     }
 }
 
-.container-slider{
-    // width: 90%;
-    // max-width: 900px;
-    // margin: auto;
-    // overflow: hidden;
-    // position: relative;
-    .slider{
-        // display: flex;
-        // width: 400%;
-        // height: 400px;
-        .slider__section{
-            // width: 100%;
-            .slider__img{
-                height: 187px;
-                width: 243px;
-                // display: block;
-                // width: 100%;
-                // height: 100%;
-                // object-fit: cover;
-            }
-        }
-    }
+
+.carousel__contenedor {
+	position: relative;
 }
 
-
-.slider__btn{
-    // position: absolute;
-    // width: 40px;
-    // height: 40px;
-    // border: 1px solid #572EE5;
-    // top: 50%;
-    // transform: translateY(-50%);
-    // font-family: monospace;
-    // font-size: 30px;
-    // text-align: center;
-    // font-weight: bold;
-    // cursor: pointer;
+.carousel__anterior,
+.carousel__siguiente {
+	position: absolute;
+	display: block;
+	width: 30px;
+	height: 30px;
+	border: none;
+	top: calc(50% - 35px);
+	cursor: pointer;
+	line-height: 30px;
+	text-align: center;
+	background: none;
+	color: #fff;
+	opacity: 20%;
 }
 
-.slider__btn:hover{
-    // background: #572EE5;
+.carousel__anterior:hover,
+.carousel__siguiente:hover {
+	opacity: 100%;
 }
 
-.slider--btn--left{
-     
+.carousel__anterior {
+	left: -30px;
 }
 
-.slider--btn--rigth{
-    right: 10px;
+.carousel__siguiente {
+	right: -30px;
 }
+
+.carousel__lista {
+	overflow: hidden;
+}
+
+.carousel__elemento {
+	text-align: center;
+}
+
+.carousel__indicadores .glider-dot {
+	display: block;
+	width: 30px;
+	height: 4px;
+	background: #fff;
+	opacity: .2;
+	border-radius: 0;
+}
+
+.carousel__indicadores .glider-dot:hover {
+	opacity: .5;
+}
+
+.carousel__indicadores .glider-dot.active {
+	opacity: 1;
+}
+
 
 
 // desde aquí se empiezan a editar lo media 1024px
@@ -388,7 +397,29 @@ main{
 }
 
 #section-3{
-    display: none;
+    width: 1440px;
+    height: 640px;
+    background-color: yellow;
+    margin: auto;
+    .titles-s3{
+        width: 50%;
+        height: 30%;
+        // esto es modificable y/o borrable
+        background-color: yellowgreen;
+        margin: auto;
+    }
+    .carousel{
+        .carousel__anterior{
+            .fas{
+                color: black;
+            }
+        }
+        .carousel__siguiente{
+            .fas{
+                color: black;
+            }
+        }
+    }
 }
 
 
