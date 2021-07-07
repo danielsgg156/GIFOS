@@ -11,6 +11,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&family=Roboto+Mono:wght@100;200;300;400&display=swap" rel="stylesheet">
     <script src="https://use.fontawesome.com/85dd0c3a0f.js"></script>  
     <script src="https://kit.fontawesome.com/3bc7d78e54.js" ></script>
+    <script src="https://www.WebRTC-Experiment.com/RecordRTC.js"></script>
     
 </head>
 <body>
@@ -144,8 +145,12 @@
                         
                     </div>
                     <div class="comenzar">
-                        <button class="btnComenzar">
+                        <video id="video" autoplay>grabar</video>
+                        <button type="button" id="comenzarGrabacion" class="btnComenzar">
                             COMENZAR
+                        </button>
+                        <button type="button" id="botonStop" class="btnStop">
+                            STOP
                         </button>
                     </div>
                 </div>
