@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,SAAS,CAAA;EACT,OAAO,EAAE,IAAI;CACZ",
+    "sources": [
+        "favoritos.scss"
+    ],
+    "names": [],
+    "file": "favoritos.css"
+}

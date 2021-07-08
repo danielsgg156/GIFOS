@@ -185,7 +185,7 @@ main{
 }
 
 .carousel__anterior {
-	left: -30px;
+	left: -60px;
 }
 
 .carousel__siguiente {
@@ -194,10 +194,6 @@ main{
 
 .carousel__lista {
 	overflow: hidden;
-}
-
-.carousel__elemento {
-	text-align: center;
 }
 
 .carousel__indicadores .glider-dot {
@@ -394,33 +390,40 @@ main{
             }
         }
     }
+    #section-3{
+        width: 1440px;
+        height: 640px;
+        background-color: yellow;
+        margin: auto;
+        .titles-s3{
+            width: 50%;
+            height: 30%;
+            // esto es modificable y/o borrable
+            background-color: yellowgreen;
+            margin: auto;
+        }
+        .carousel{
+            .carousel__anterior{
+                border: 1px solid #572EE5;
+                height: 40px;
+                width: 40px;
+                .fas{
+                    color:#572EE5;
+                }
+            }
+            .carousel__siguiente{
+                border: 1px solid #572EE5;
+                height: 40px;
+                width: 40px;
+                .fas{
+                    color: #572EE5;
+                }
+            }
+        }
+    }   
 }
 
-#section-3{
-    width: 1440px;
-    height: 640px;
-    background-color: yellow;
-    margin: auto;
-    .titles-s3{
-        width: 50%;
-        height: 30%;
-        // esto es modificable y/o borrable
-        background-color: yellowgreen;
-        margin: auto;
-    }
-    .carousel{
-        .carousel__anterior{
-            .fas{
-                color: black;
-            }
-        }
-        .carousel__siguiente{
-            .fas{
-                color: black;
-            }
-        }
-    }
-}
+
 
 
 

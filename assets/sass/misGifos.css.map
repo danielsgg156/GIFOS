@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,SAAS,CAAA;EACL,OAAO,EAAE,IAAI;CAChB",
+    "sources": [
+        "misGifos.scss"
+    ],
+    "names": [],
+    "file": "misGifos.css"
+}

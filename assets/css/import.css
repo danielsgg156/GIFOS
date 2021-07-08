@@ -223,16 +223,13 @@ main {
   opacity: 100%; }
 
 .carousel__anterior {
-  left: -30px; }
+  left: -60px; }
 
 .carousel__siguiente {
   right: -30px; }
 
 .carousel__lista {
   overflow: hidden; }
-
-.carousel__elemento {
-  text-align: center; }
 
 .carousel__indicadores .glider-dot {
   display: block;
@@ -377,22 +374,30 @@ main {
     align-items: flex-end; }
     #section-2 .cintaFotografica img {
       height: 112px;
-      width: 135px; } }
-#section-3 {
-  width: 1440px;
-  height: 640px;
-  background-color: yellow;
-  margin: auto; }
-  #section-3 .titles-s3 {
-    width: 50%;
-    height: 30%;
-    background-color: yellowgreen;
-    margin: auto; }
-  #section-3 .carousel .carousel__anterior .fas {
-    color: black; }
-  #section-3 .carousel .carousel__siguiente .fas {
-    color: black; }
+      width: 135px; }
 
+  #section-3 {
+    width: 1440px;
+    height: 640px;
+    background-color: yellow;
+    margin: auto; }
+    #section-3 .titles-s3 {
+      width: 50%;
+      height: 30%;
+      background-color: yellowgreen;
+      margin: auto; }
+    #section-3 .carousel .carousel__anterior {
+      border: 1px solid #572EE5;
+      height: 40px;
+      width: 40px; }
+      #section-3 .carousel .carousel__anterior .fas {
+        color: #572EE5; }
+    #section-3 .carousel .carousel__siguiente {
+      border: 1px solid #572EE5;
+      height: 40px;
+      width: 40px; }
+      #section-3 .carousel .carousel__siguiente .fas {
+        color: #572EE5; } }
 @media (min-width: 1440px) {
   .inspirate {
     width: 32%;
