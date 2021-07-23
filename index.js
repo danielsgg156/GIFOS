@@ -90,49 +90,37 @@ function verMas() {
     limit = limit + 12;
     search();
 }
-async function startRecording() {
-    let stream = await navigator.mediaDevices.getUserMedia({
-        video: true,
-        audio: false,
-    }).then(stream => {
-        video.srcObject = stream;
-    }).catch(console.error);
 
-    let recorder = new RecordRTCPromisesHandler(stream, {
-        type: "video",
-    });
-    recorder.startRecording();
-
-    const sleep = (m) => new Promise((r) => setTimeout(r, m));
-    await sleep(3000);
-
-    await recorder.stopRecording();
-    let blob = await recorder.getBlob();
-    invokeSaveAsDialog(blob);
+function getStreamAndRecord() {
+    hideScreenStep1();
+    changeClassButtonStep1();
+    navigator.mediaDevices.getUserMedia({
+            audio: false,
+            video: {
+                height: { max: 480 }
+            }
+        })
+        .then(function(stream) {
+            video.srcObject = stream;
+            video.play()
+        });
 }
-document.querySelector("#comenzarGrabacion").addEventListener("click", startRecording);
 
+function changeClassButtonStep1() {
+    // se busca elemento (boton) por su id
+    var element = document.getElementById("btn1");
+    // eliminar clase actual
+    element.classList.remove("boton-1");
+    // se agrega clase nueva
+    element.classList.add("btnSelected");
+}
 
-// function startup(){
-//     navigator.mediaDevices.getUserMedia({
-//         audio: false,
-//         video: true
-//     }).then(stream =>{
-//         video.srcObject= stream;
-//     }).catch(console.error)
-// }
+function hideScreenStep1() {
+    // ocultar elemento html
+    document.getElementById("screen_step_1").style.display = "none";
+}
 
-// document.querySelector("#comenzarGrabacion").addEventListener("click",startup);
-
-// function record (stream){
-//     video.srcObject =stream;
-
-//     let mediaRecord = new mediaRecord (stream,{
-//         type: "video"
-//     });
-
-//     mediaRecord.start();
-
+document.querySelector("#btnComenzar").addEventListener("click", getStreamAndRecord);
 
 window.addEventListener('load', function() {
     new Glider(document.querySelector('.carousel__lista'), {
@@ -161,3 +149,27 @@ window.addEventListener('load', function() {
         }]
     });
 });
+
+
+/*
+    async function startRecording() {
+        let stream = await navigator.mediaDevices.getUserMedia({
+            video: true,
+            audio: false,
+        }).then(stream => {
+            video.srcObject = stream;
+        }).catch(console.error);
+
+        let recorder = new RecordRTCPromisesHandler(stream, {
+            type: "video",
+        });
+        recorder.startRecording();
+
+        const sleep = (m) => new Promise((r) => setTimeout(r, m));
+        await sleep(3000);
+
+        await recorder.stopRecording();
+        let blob = await recorder.getBlob();
+        invokeSaveAsDialog(blob);
+    }
+*/

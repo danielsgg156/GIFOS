@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,11 +11,12 @@
     <link rel="stylesheet" href="./form.js">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&family=Roboto+Mono:wght@100;200;300;400&display=swap" rel="stylesheet">
-    <script src="https://use.fontawesome.com/85dd0c3a0f.js"></script>  
-    <script src="https://kit.fontawesome.com/3bc7d78e54.js" ></script>
+    <script src="https://use.fontawesome.com/85dd0c3a0f.js"></script>
+    <script src="https://kit.fontawesome.com/3bc7d78e54.js"></script>
     <script src="https://www.WebRTC-Experiment.com/RecordRTC.js"></script>
-    
+
 </head>
+
 <body>
     <header>
         <div class="container">
@@ -36,12 +38,12 @@
                 </ul>
             </nav>
         </div>
-    </header> 
+    </header>
     <main>
         <section id="section-1">
             <div class="inspirate">
-                Inspírate, busca, guarda, y crea los mejores 
-                <div class="acuarela">GIFOS</div> 
+                Inspírate, busca, guarda, y crea los mejores
+                <div class="acuarela">GIFOS</div>
             </div>
             <div class="divimagen">
                 <img src="./assets/img/ilustra_header.svg" alt="">
@@ -64,12 +66,12 @@
             <div class="line"></div>
 
             <div class="palabraEnBuscador">
-                <div class= "idshare" id="idshare"></div>
+                <div class="idshare" id="idshare"></div>
                 <div id="images"></div>
                 <button id="verMas" onclick="verMas()">Ver Más</button>
             </div>
-        </section>    
-        
+        </section>
+
         <section id="section-2">
             <section id="favorito">
                 <div class="like">
@@ -83,8 +85,7 @@
                         <img src="./assets/img/icon-fav-sin-contenido.svg" alt="">
                     </div>
                     <div class="save">
-                        "¡Guarda tu primer GIFO en Favoritos 
-                        para que se muestre aquí!"
+                        "¡Guarda tu primer GIFO en Favoritos para que se muestre aquí!"
                     </div>
                 </div>
             </section>
@@ -102,8 +103,8 @@
                     <div class="animate">
                         ¡Anímate a crear tu primer GIFO!
                     </div>
-                </div> 
-            </section>    
+                </div>
+            </section>
             <section id="circulo">
                 <div class="camara">
                     <img class="lente" src="./assets/img/camara.svg" alt="">
@@ -115,15 +116,17 @@
                             <div class="box-1"></div>
                             <div class="box-2"></div>
                         </div>
-                        
-                        <div class="intoMarco-1">
-                            Aquí podrás <br>crear tus propios
-                             <h1>
-                                 GIFOS
-                            </h1>
-                        </div>
-                        <div class="intoMarco-2">
-                            ¡Crea tu GIFO en sólo 3 pasos!<br>(sólo necesitas una cámara para grabar un video)
+
+                        <div id="screen_step_1">
+                            <div class="intoMarco-1">
+                                Aquí podrás <br>crear tus propios
+                                <h1>
+                                    GIFOS
+                                </h1>
+                            </div>
+                            <div class="intoMarco-2">
+                                ¡Crea tu GIFO en sólo 3 pasos!<br>(sólo necesitas una cámara para grabar un video)
+                            </div>
                         </div>
                         <div class="box">
                             <div class="box-3"></div>
@@ -131,28 +134,36 @@
                         </div>
                     </div>
                     <div class="steps">
-                        <div class="boton-1">
+                        <div id="btn1" class="boton-1">
                             <button>1</button>
                         </div>
-                        <div class="boton-2">
+                        <div id="btn2" class="boton-2">
                             <button>2</button>
                         </div>
-                        <div class="boton-3">
+                        <div id="btn3" class="boton-3">
                             <button>3</button>
                         </div>
                     </div>
                     <div class="emptyPurple">
-                        
+
                     </div>
-                    <div class="comenzar">
-                        <video id="video" autoplay>grabar</video>
-                        <button type="button" id="comenzarGrabacion" class="btnComenzar">
-                            COMENZAR
+
+                    <video id="video" autoplay></video>
+
+
+                    <!--Paso 1-->
+                    <button type="button" id="btnComenzar" class="btnComenzar">
+                            Comenzar
                         </button>
-                        <button type="button" id="botonStop" class="btnStop">
-                            STOP
+
+                    <!--Paso2-->
+                    <button type="button" id="btnGrabar" class="btnComenzar">
+                            Grabar
                         </button>
-                    </div>
+                    <button type="button" id="btnStop" class="btnComenzar">
+                            Detener
+                        </button>
+
                 </div>
                 <div class="cintaFotografica">
                     <img src="./assets/img/pelicula.svg" alt="">
@@ -161,12 +172,12 @@
         </section>
 
         <section id="section-3">
-            <div class="titles-s3">   
+            <div class="titles-s3">
                 <div class="trendingGifos">
-                    Trending GIFOS 
+                    Trending GIFOS
                 </div>
                 <div class="ultimosGifos">
-                    Mira los últimos GIFOS  de nuestra comunidad.
+                    Mira los últimos GIFOS de nuestra comunidad.
                 </div>
             </div>
             <!-- CAROUSEL -->
@@ -175,7 +186,7 @@
                     <button aria-label="Anterior" class="carousel__anterior">
                         <i class="fas fa-chevron-left"></i>
                     </button>
-    
+
                     <div class="carousel__lista">
                         <div class="carousel__elemento">
                             <img src="./assets/img/2.png" alt="Rock and Roll Hall of Fame">
@@ -193,7 +204,7 @@
                             <img src="./assets/img/5.png" alt="Harmony Tower">
                             <p>Harmony Tower</p>
                         </div>
-        
+
                         <div class="carousel__elemento">
                             <img src="./assets/img/6.png" alt="Empire State Building">
                             <p>Empire State Building</p>
@@ -211,19 +222,19 @@
                             <p>Harmony Tower</p>
                         </div>
                     </div>
-    
+
                     <button aria-label="Siguiente" class="carousel__siguiente">
                         <i class="fas fa-chevron-right"></i>
                     </button>
                 </div>
-    
+
                 <div role="tablist" class="carousel__indicadores"></div>
             </div>
-        </div>
+            </div>
         </section>
 
     </main>
-    <script type="text/javascript"src="index.js"></script>
+    <script type="text/javascript" src="index.js"></script>
     <footer>
         <div class="compartirEn">Compartir en:</div>
         <div class="social-btns">
@@ -236,4 +247,5 @@
     <script src="https://cdn.jsdelivr.net/npm/glider-js@1.7.3/glider.min.js"></script>
     <script src="https://kit.fontawesome.com/2c36e9b7b1.js" crossorigin="anonymous"></script>
 </body>
+
 </html>

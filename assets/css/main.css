@@ -415,6 +415,20 @@ main {
         color: #572EE5;
         border: 1px solid #572EE5;
     }
+    #section-2 .mitad .steps .btnSelected {
+        background: #572EE5;
+        color: #FFFFFF;
+    }
+    #section-2 .mitad .steps .btnSelected button {
+        font-family: 'Roboto';
+        font-weight: 200;
+        font-size: 18px;
+        text-align: center;
+        border-radius: 16px;
+        width: 32px;
+        height: 32px;
+        border: 1px solid #572EE5;
+    }
     #section-2 .mitad .emptyPurple {
         height: 6.9px;
         width: 700px;
