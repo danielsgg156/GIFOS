@@ -12,6 +12,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&family=Roboto+Mono:wght@100;200;300;400&display=swap" rel="stylesheet">
     <script src="https://use.fontawesome.com/85dd0c3a0f.js"></script>  
     <script src="https://kit.fontawesome.com/3bc7d78e54.js" ></script>
+    <script src="https://www.WebRTC-Experiment.com/RecordRTC.js"></script>
     
 </head>
 <body>
@@ -70,9 +71,38 @@
         </section>    
         
         <section id="section-2">
-            <section id="favorito">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Praesentium pariatur deserunt sunt.
+            <section id="favorito">
+                <div class="like">
+                    <div class="emoticonHeartSmall">
+                        <img src="./assets/img/icon-favoritos.svg" alt="">
+                    </div>
+                    <div class="favorito">
+                        Favoritos
+                    </div>
+                    <div class="emoticonHeartBig">
+                        <img src="./assets/img/icon-fav-sin-contenido.svg" alt="">
+                    </div>
+                    <div class="save">
+                        "¡Guarda tu primer GIFO en Favoritos 
+                        para que se muestre aquí!"
+                    </div>
+                </div>
             </section>
-            <section id="misGifos">Lorem ipsum dolor sit amet consectetur adipisicing elit. Non, iure? Totam sequi voluptatibus sapiente perferendis, harum optio quia. In corrupti fugiat deserunt expedita commodi consectetur aspernatur ratione neque mollitia laboriosam?
+            <section id="misGifos">
+                <div class="crear">
+                    <div class="emoticonSmall">
+                        <img src="./assets/img/icon-mis-gifos.svg" alt="">
+                    </div>
+                    <div class="misGifos">
+                        Mis GIFOS
+                    </div>
+                    <div class="emoticonBig">
+                        <img src="./assets/img/icon-mis-gifos-sin-contenido.svg" alt="">
+                    </div>
+                    <div class="animate">
+                        ¡Anímate a crear tu primer GIFO!
+                    </div>
+                </div> 
             </section>    
             <section id="circulo">
                 <div class="camara">
@@ -115,8 +145,12 @@
                         
                     </div>
                     <div class="comenzar">
-                        <button class="btnComenzar">
+                        <video id="video" autoplay>grabar</video>
+                        <button type="button" id="comenzarGrabacion" class="btnComenzar">
                             COMENZAR
+                        </button>
+                        <button type="button" id="botonStop" class="btnStop">
+                            STOP
                         </button>
                     </div>
                 </div>
