@@ -31,27 +31,27 @@ footer{
     }
 }
 @media(min-width:1024px){
-footer{
-    display: grid;
-    grid-template-columns: 20% 18% 56%;
-    position: relative;
-    top: 94px;
-    height: 116px;
-    .compartirEn{
-        text-align: right;
-    }
-
-    .social-btns{
-        margin-left: 10px;
-        a{
-           
-            .fa-twitter{
-                color: #572EE5
+    footer{
+        display: grid;
+        grid-template-columns: 20% 18% 56%;
+        position: relative;
+        top: 94px;
+        height: 116px;
+        .compartirEn{
+            text-align: right;
+        }
+    
+        .social-btns{
+            margin-left: 10px;
+            a{
+               
+                .fa-twitter{
+                    color: #572EE5
+                }
             }
         }
+        .rightsReserved{
+            text-align: right;
+        }    
     }
-    .rightsReserved{
-        text-align: right;
-    }    
-}
 }

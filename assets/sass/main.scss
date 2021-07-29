@@ -130,86 +130,66 @@ main {
     margin-top: 80px;
 }
 
-.titles-s3 {
-    height: 30px;
-    .arrows {
-        display: none;
-    }
-    .trendingGifos {
-        padding-top: 46px;
-        font-size: 20px;
-        text-align: center;
-        color: #572EE5;
-        font-weight: bolder;
-    }
-    .ultimosGifos {
-        padding-top: 7px;
-        font-size: 16px;
-        font-family: 'Roboto', sans-serif;
-        text-align: center;
-        color: #000000;
-        font-weight: 300;
-        margin: 0px 20%;
-    }
-}
+// .titles-s3 {
+//     height: 30px;
+//     .trendingGifos {
+//         padding-top: 46px;
+//         font-size: 20px;
+//         text-align: center;
+//         color: #572EE5;
+//         font-weight: bolder;
+//     }
+//     .ultimosGifos {
+//         padding-top: 7px;
+//         font-size: 16px;
+//         font-family: 'Roboto', sans-serif;
+//         text-align: center;
+//         color: #000000;
+//         font-weight: 300;
+//         margin: 0px 20%;
+//     }
+// }
 
-.carousel__contenedor {
-    position: relative;
-}
+// .carousel__contenedor {
+//     position: relative;
+// }
 
-.carousel__anterior,
-.carousel__siguiente {
-    position: absolute;
-    display: block;
-    width: 30px;
-    height: 30px;
-    border: none;
-    top: calc(50% - 35px);
-    cursor: pointer;
-    line-height: 30px;
-    text-align: center;
-    background: none;
-    color: #fff;
-    opacity: 20%;
-}
+// .carousel__anterior,
+// .carousel__siguiente {
+//     position: absolute;
+//     display: block;
+//     width: 30px;
+//     height: 30px;
+//     border: none;
+//     top: calc(50% - 35px);
+//     cursor: pointer;
+//     line-height: 30px;
+//     text-align: center;
+//     background: none;
+//     color: #fff;
+//     opacity: 20%;
+// }
 
-.carousel__anterior:hover,
-.carousel__siguiente:hover {
-    opacity: 100%;
-}
+// .carousel__anterior:hover,
+// .carousel__siguiente:hover {
+//     opacity: 100%;
+// }
 
-.carousel__anterior {
-    left: -30px;
-}
+// .carousel__anterior {
+//     left: -30px;
+// }
 
-.carousel__siguiente {
-    right: -30px;
-}
+// .carousel__siguiente {
+//     right: -30px;
+// }
 
-.carousel__lista {
-    overflow: hidden;
-}
+// .carousel__lista {
+//     overflow: hidden;
+// }
 
-.carousel__elemento {
-    text-align: center;
-}
-
-.carousel__indicadores .glider-dot {
-    display: block;
-    width: 30px;
-    height: 4px;
-    background: #fff;
-    opacity: .2;
-    border-radius: 0;
-}
-
-.carousel__indicadores .glider-dot:hover {
-    opacity: .5;
-}
-
-.carousel__indicadores .glider-dot.active {
-    opacity: 1;
-}
+// .carousel__elemento {
+//     text-align: center;
+// }
 
 // desde aquí se empiezan a editar lo media 1024px
 @media(min-width:1024px) {
@@ -464,41 +444,49 @@ main {
                 width: 135px;
             }
         }
-        <<<<<<< HEAD
     }
-    =======
-}
-
-
-}
-#section-3 {
-    width: 1440px;
-    height: 640px;
-    background-color: yellow;
-    margin: auto;
-    .titles-s3 {
-        width: 50%;
-        height: 30%;
-        // esto es modificable y/o borrable
-        background-color: yellowgreen;
+    #section-3 {
+        width: 35%;
+        height: 430px;
+        background-color: yellow;
         margin: auto;
-    }
-    
-    .carousel {
-        .carousel__anterior {
-            .fas {
-                color: black;
-            }
+        .titles-s3 {
+            width: 50%;
+            height: 30%;
+            // esto es modificable y/o borrable
+            background-color: yellowgreen;
+            margin: auto;
         }
-        .carousel__siguiente {
-            .fas {
-                color: black;
-            }
-        }
+        
+        // .carousel {
+        //     .carousel__contenedor{
+        //         .carousel__anterior{
+        //             .carousel__anterior {
+        //                 size: 40px 40px;
+        //                 border: 1px solid #572EE5;
+        //                 .fas {
+        //                     color: #572EE5;
+        //                 }
+        //             }
+        //         }
+        //         .carousel__lista{
+        //             .carousel__elemento{
+
+        //             }
+        //         .carousel__siguiente {
+        //             size: 40px 40px;
+        //             border: 1px solid #572EE5;
+        //             .fas {
+        //                 color: #572EE5;
+        //                 }
+        //             }
+        //         }
+        //     }
+        // }
     }
-    
-    >>>>>>>54e1981a60450545853cbc8da03caf432877b80f
 }
+
+
 // desde aquí se empiezan a editar lo media 1440px
 @media(min-width:1440px) {
     .inspirate {
