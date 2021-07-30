@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gifos Acámica</title>
+    <link rel="shortcut icon" href="./assets/img/logo-desktop.svg" type="image/x-icon">
+    <link rel="stylesheet" href="./assets/css/import.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glider-js@1.7.7/glider.min.css">
+    <link rel="stylesheet" href="./form.js">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&family=Roboto+Mono:wght@100;200;300;400&display=swap" rel="stylesheet">
+    <script src="https://use.fontawesome.com/85dd0c3a0f.js"></script>
+    <script src="https://kit.fontawesome.com/3bc7d78e54.js"></script>
+    <script src="https://www.WebRTC-Experiment.com/RecordRTC.js"></script>
+
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <figure id="logo" class="logo">
+                <a href="./index.html"><img src="./assets/img/logo-mobile.svg" alt=""></a>
+            </figure>
+            <div class="iconmenuhamburguesa" id="iconmenu">
+                <i id="icono" class="fas fa-bars"></i>
+            </div>
+            <nav id="navmenu" class="menu oculto">
+                <ul>
+                    <li class="liheader" id="nocturno">MODO NOCTURNO</li>
+                    <li class="linea"></li>
+                    <li class="liheader" id="favoritos"><a href="./favoritos.html">FAVORITOS</a> </li>
+                    <li class="linea"></li>
+                    <li class="liheader" id="mis-gifos"><a href="./misGifos.html">MIS GIFOS</a></li>
+                    <li class="linea"></li>
+                    <li class="rueda"><img id="rueda" src="./assets/img/button-crear-gifo.svg" alt=""></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <body>
+        <section id="circulo">
+            <div class="camara">
+                <img class="lente" src="./assets/img/camara.svg" alt="">
+                <img class="flash" src="./assets/img/Path 2.svg" alt="">
+            </div>
+            <div class="mitad">
+                <div class="marco">
+                    <div class="box">
+                        <div class="box-1"></div>
+                        <div class="box-2"></div>
+                    </div>
+
+                    <div id="screen_step_1">
+                        <div class="intoMarco-1">
+                            Aquí podrás <br>crear tus propios
+                            <h1>
+                                GIFOS
+                            </h1>
+                        </div>
+                        <div class="intoMarco-2">
+                            ¡Crea tu GIFO en sólo 3 pasos!<br>(sólo necesitas una cámara para grabar un video)
+                        </div>
+                    </div>
+                    <div class="box">
+                        <div class="box-3"></div>
+                        <div class="box-4"></div>
+                    </div>
+                </div>
+                <div class="steps">
+                    <div id="btn1" class="boton-1">
+                        <button>1</button>
+                    </div>
+                    <div id="btn2" class="boton-2">
+                        <button>2</button>
+                    </div>
+                    <div id="btn3" class="boton-3">
+                        <button>3</button>
+                    </div>
+                </div>
+                <div class="emptyPurple">
+
+                </div>
+
+                <video hidden id="video" autoplay></video>
+
+
+                <!--Paso 1-->
+                <button type="button" id="btnComenzar" class="btnComenzar">
+                        Comenzar
+                    </button>
+
+                <!--Paso2-->
+                <button type="button" id="btnGrabar" class="btnComenzar">
+                        Grabar
+                    </button>
+                <button type="button" id="btnStop" class="btnComenzar">
+                        Detener
+                    </button>
+
+            </div>
+            <div class="cintaFotografica">
+                <img src="./assets/img/pelicula.svg" alt="">
+            </div>
+        </section> 
+    </body>
+    <footer>
+        <div class="compartirEn">Compartir en:</div>
+        <div class="social-btns">
+            <a class="btn_instagram" href="https://www.instagram.com/acamica/" target="_blank"><i class="fa fa-instagram"></i></a>
+            <a class="btn_twitter" href="https://twitter.com/Acamica_com?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor" target="_blank"><i class="fa fa-twitter"></i></a>
+            <a class="btn_facebook" href="https://www.facebook.com/Acamica.org" target="_blank"><i class="fa fa-facebook"></i></a>
+        </div>
+        <div class="rightsReserved">© GIFOS 2020 All Rights Reserved.</div>
+    </footer>
+    

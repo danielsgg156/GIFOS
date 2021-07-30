@@ -23,18 +23,23 @@ menuHamburguesa.addEventListener("click", () => {
     navMenu.classList.toggle("oculto");
 });
 
-function secciones(ele, funcion, sect1, sect2, sect3, sect4) {
-    ele.addEventListener(funcion, () => {
-        sect1.style.display = "grid";
-        sect2.style.display = "none";
-        sect3.style.display = "none";
-        sect4.style.display = "none";
-    });
+// function secciones(ele, funcion, sect1, sect2, sect3, sect4) {
+//     ele.addEventListener(funcion, () => {
+//         sect1.style.display = "grid";
+//         sect2.style.display = "none";
+//         sect3.style.display = "none";
+//         sect4.style.display = "none";
+//     });
+// }
+// secciones(logo, "click", buscador, misGifos, circulo, favorito);
+// secciones(btnMisGifos, "click", misGifos, buscador, circulo, favorito);
+// secciones(btnFavoritos, "click", favorito, circulo, buscador, misGifos);
+// secciones(btnRueda, "click", circulo, favorito, buscador, misGifos);
+
+function hideVideo(){
+    document.getElementById("video").style.display = "none";
 }
-secciones(logo, "click", buscador, misGifos, circulo, favorito);
-secciones(btnMisGifos, "click", misGifos, buscador, circulo, favorito);
-secciones(btnFavoritos, "click", favorito, circulo, buscador, misGifos);
-secciones(btnRueda, "click", circulo, favorito, buscador, misGifos);
+
 
 function search() {
     let palabra = document.getElementById("palabra").value;
@@ -91,7 +96,8 @@ function verMas() {
     search();
 }
 
-function getStreamAndRecord() {
+function getStream() {
+    // hideVideo();
     hideScreenStep1();
     changeClassButtonStep1();
     navigator.mediaDevices.getUserMedia({
@@ -120,7 +126,7 @@ function hideScreenStep1() {
     document.getElementById("screen_step_1").style.display = "none";
 }
 
-document.querySelector("#btnComenzar").addEventListener("click", getStreamAndRecord);
+document.querySelector("#btnComenzar").addEventListener("click", getStream);
 
             // CAROUSEL CODE
 window.addEventListener('load', function() {

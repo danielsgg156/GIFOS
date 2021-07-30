@@ -1,4 +1,129 @@
 #circulo {
-  display: none; }
+  grid-template-columns: 1fr 1fr 1fr; }
+  #circulo .camara {
+    display: flex;
+    justify-content: flex-end; }
+  #circulo .lente {
+    width: 95px; }
+  #circulo .flash {
+    width: 50px;
+    height: 400px; }
+
+.mitad {
+  width: 640px;
+  height: 400px; }
+  .mitad .marco {
+    margin: auto;
+    height: 324px;
+    width: 640px;
+    border: 1px solid #572EE5; }
+    .mitad .marco .intoMarco-1 {
+      padding-top: 7%;
+      margin: auto;
+      width: 550px;
+      height: 70px;
+      font-family: 'Montserrat', sans-serif;
+      font-size: 25px;
+      font-weight: bold;
+      color: #572EE5;
+      text-align: center;
+      line-height: 35px; }
+      .mitad .marco .intoMarco-1 h1 {
+        color: #50E3C2;
+        display: inline; }
+    .mitad .marco .intoMarco-2 {
+      width: 446px;
+      padding-top: 1%;
+      height: 70px;
+      margin: auto;
+      font-family: 'Roboto', sans-serif;
+      font-size: 16px;
+      color: #000000;
+      text-align: center;
+      line-height: 29px; }
+    .mitad .marco .box {
+      display: flex;
+      justify-content: space-between; }
+      .mitad .marco .box .box-1,
+      .mitad .marco .box .box-2,
+      .mitad .marco .box .box-3,
+      .mitad .marco .box .box-4 {
+        display: flex;
+        height: 25px;
+        width: 27px; }
+      .mitad .marco .box .box-1,
+      .mitad .marco .box .box-2 {
+        margin: 20px 20px;
+        border-top: 1px solid #50E3C2; }
+      .mitad .marco .box .box-3,
+      .mitad .marco .box .box-4 {
+        margin: 20px 20px;
+        border-bottom: 1px solid #50E3C2; }
+      .mitad .marco .box .box-1,
+      .mitad .marco .box .box-3 {
+        border-left: 1px solid #50E3C2; }
+      .mitad .marco .box .box-2,
+      .mitad .marco .box .box-4 {
+        border-right: 1px solid #50E3C2; }
+  .mitad .steps {
+    display: flex;
+    justify-content: space-evenly;
+    width: 25%;
+    margin: 0px 265px;
+    padding-top: 13px;
+    margin-bottom: 15px; }
+    .mitad .steps .boton-1,
+    .mitad .steps .boton-2,
+    .mitad .steps .boton-3 {
+      color: #572EE5; }
+      .mitad .steps .boton-1 button,
+      .mitad .steps .boton-2 button,
+      .mitad .steps .boton-3 button {
+        font-family: 'Roboto';
+        font-weight: 200;
+        font-size: 18px;
+        text-align: center;
+        border-radius: 16px;
+        width: 32px;
+        height: 32px;
+        color: #572EE5;
+        border: 1px solid #572EE5; }
+    .mitad .steps .btnSelected {
+      background: #572EE5;
+      color: #FFFFFF; }
+      .mitad .steps .btnSelected button {
+        font-family: 'Roboto';
+        font-weight: 200;
+        font-size: 18px;
+        text-align: center;
+        border-radius: 16px;
+        width: 32px;
+        height: 32px;
+        border: 1px solid #572EE5; }
+  .mitad .emptyPurple {
+    height: 6.9px;
+    width: 700px;
+    margin: 0px 0px 20px -30px;
+    background: #572EE5;
+    border-radius: 5px; }
+  .mitad .btnComenzar {
+    display: flex;
+    justify-content: center;
+    border: 1px solid #572EE5;
+    border-radius: 25px;
+    width: 107px;
+    height: 34px;
+    font-size: 12px;
+    font-family: 'Montserrat';
+    font-weight: bold;
+    color: #572EE5; }
+
+.cintaFotografica {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end; }
+  .cintaFotografica img {
+    height: 112px;
+    width: 135px; }
 
 /*# sourceMappingURL=rueda.css.map */

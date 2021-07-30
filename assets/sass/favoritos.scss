@@ -1,3 +1,39 @@
-#favorito{
-display: none;
+// #favorito{
+// display: none;
+// }
+#favorito {
+    .like {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .emoticonHeartSmall {
+        img {
+            width: 28px;
+            height: 21px;
+        }
+    }
+    .favorito {
+        font-family: 'Montserrat-Bold';
+        font-size: 25px;
+        color: #572EE5;
+        font-weight: 600;
+        height: 100px;
+    }
+    .emoticonHeartBig {
+        img {
+            width: 90px;
+            height: 130px;
+        }
+    }
+    .save {
+        font-family: 'Montserrat-Bold';
+        font-size: 22px;
+        color: #50E3C2;
+        width: 345px;
+        height: 72px;
+        display: flex;
+        text-align: center;
+    }
 }
+       

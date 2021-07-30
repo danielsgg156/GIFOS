@@ -1,6 +1,6 @@
 {
 "version": 3,
-"mappings": "AAAA,SAAS;EACL,OAAO,EAAE,IAAI",
+"mappings": "AAII,gBAAO;EACH,OAAO,EAAE,IAAI;EACb,cAAc,EAAE,MAAM;EACtB,WAAW,EAAE,MAAM;EAEf,mCAAI;IACA,KAAK,EAAE,IAAI;IACX,MAAM,EAAE,IAAI",
 "sources": ["../sass/misGifos.scss"],
 "names": [],
 "file": "misGifos.css"
