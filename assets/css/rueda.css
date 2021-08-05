@@ -1,129 +1,147 @@
-#circulo {
-  grid-template-columns: 1fr 1fr 1fr; }
-  #circulo .camara {
-    display: flex;
-    justify-content: flex-end; }
-  #circulo .lente {
-    width: 95px; }
-  #circulo .flash {
-    width: 50px;
-    height: 400px; }
-
-.mitad {
-  width: 640px;
-  height: 400px; }
-  .mitad .marco {
-    margin: auto;
-    height: 324px;
-    width: 640px;
-    border: 1px solid #572EE5; }
-    .mitad .marco .intoMarco-1 {
-      padding-top: 7%;
-      margin: auto;
-      width: 550px;
-      height: 70px;
-      font-family: 'Montserrat', sans-serif;
-      font-size: 25px;
-      font-weight: bold;
-      color: #572EE5;
-      text-align: center;
-      line-height: 35px; }
-      .mitad .marco .intoMarco-1 h1 {
-        color: #50E3C2;
-        display: inline; }
-    .mitad .marco .intoMarco-2 {
-      width: 446px;
-      padding-top: 1%;
-      height: 70px;
-      margin: auto;
-      font-family: 'Roboto', sans-serif;
-      font-size: 16px;
-      color: #000000;
-      text-align: center;
-      line-height: 29px; }
-    .mitad .marco .box {
+@media (min-width: 1024px) {
+  body #circulo {
+    height: 693px;
+    width: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr; }
+    body #circulo .camara {
+      width: 250px;
+      height: 165px;
       display: flex;
-      justify-content: space-between; }
-      .mitad .marco .box .box-1,
-      .mitad .marco .box .box-2,
-      .mitad .marco .box .box-3,
-      .mitad .marco .box .box-4 {
+      justify-content: flex-end;
+      margin: auto; }
+      body #circulo .camara .lente {
+        height: 162px;
+        width: 123px; }
+      body #circulo .camara .flash {
+        height: 167px;
+        width: 65px; }
+  body .mitad {
+    margin: auto;
+    width: 580px;
+    height: 392px; }
+    body .mitad .marco {
+      margin: auto;
+      height: 390px;
+      width: 580px;
+      border: 1px solid #572EE5; }
+      body .mitad .marco .container_intoMarco {
+        margin: auto; }
+        body .mitad .marco .container_intoMarco .intoMarco-1 {
+          margin: 52px auto 0px auto;
+          width: 550px;
+          height: 70px;
+          font-family: 'Montserrat', sans-serif;
+          font-size: 25px;
+          font-weight: bold;
+          color: #572EE5;
+          text-align: center;
+          line-height: 35px; }
+          body .mitad .marco .container_intoMarco .intoMarco-1 h1 {
+            color: #50E3C2;
+            display: inline; }
+        body .mitad .marco .container_intoMarco .intoMarco-2 {
+          width: 446px;
+          height: 135px;
+          margin: auto;
+          font-family: 'Roboto', sans-serif;
+          font-size: 16px;
+          color: #000000;
+          text-align: center;
+          line-height: 29px; }
+      body .mitad .marco .boxUp, body .mitad .marco .boxDown {
+        width: auto;
         display: flex;
-        height: 25px;
-        width: 27px; }
-      .mitad .marco .box .box-1,
-      .mitad .marco .box .box-2 {
-        margin: 20px 20px;
-        border-top: 1px solid #50E3C2; }
-      .mitad .marco .box .box-3,
-      .mitad .marco .box .box-4 {
-        margin: 20px 20px;
-        border-bottom: 1px solid #50E3C2; }
-      .mitad .marco .box .box-1,
-      .mitad .marco .box .box-3 {
-        border-left: 1px solid #50E3C2; }
-      .mitad .marco .box .box-2,
-      .mitad .marco .box .box-4 {
-        border-right: 1px solid #50E3C2; }
-  .mitad .steps {
-    display: flex;
-    justify-content: space-evenly;
-    width: 25%;
-    margin: 0px 265px;
-    padding-top: 13px;
-    margin-bottom: 15px; }
-    .mitad .steps .boton-1,
-    .mitad .steps .boton-2,
-    .mitad .steps .boton-3 {
-      color: #572EE5; }
-      .mitad .steps .boton-1 button,
-      .mitad .steps .boton-2 button,
-      .mitad .steps .boton-3 button {
-        font-family: 'Roboto';
-        font-weight: 200;
-        font-size: 18px;
-        text-align: center;
-        border-radius: 16px;
-        width: 32px;
-        height: 32px;
-        color: #572EE5;
-        border: 1px solid #572EE5; }
-    .mitad .steps .btnSelected {
+        justify-content: space-between; }
+        body .mitad .marco .boxUp .box-1,
+        body .mitad .marco .boxUp .box-2,
+        body .mitad .marco .boxUp .box-3,
+        body .mitad .marco .boxUp .box-4, body .mitad .marco .boxDown .box-1,
+        body .mitad .marco .boxDown .box-2,
+        body .mitad .marco .boxDown .box-3,
+        body .mitad .marco .boxDown .box-4 {
+          display: flex;
+          height: 25px;
+          width: 27px; }
+        body .mitad .marco .boxUp .box-1,
+        body .mitad .marco .boxUp .box-2, body .mitad .marco .boxDown .box-1,
+        body .mitad .marco .boxDown .box-2 {
+          margin: 20px 20px;
+          border-top: 1px solid #50E3C2; }
+        body .mitad .marco .boxUp .box-3,
+        body .mitad .marco .boxUp .box-4, body .mitad .marco .boxDown .box-3,
+        body .mitad .marco .boxDown .box-4 {
+          margin: 20px 20px;
+          border-bottom: 1px solid #50E3C2; }
+        body .mitad .marco .boxUp .box-1,
+        body .mitad .marco .boxUp .box-3, body .mitad .marco .boxDown .box-1,
+        body .mitad .marco .boxDown .box-3 {
+          border-left: 1px solid #50E3C2; }
+        body .mitad .marco .boxUp .box-2,
+        body .mitad .marco .boxUp .box-4, body .mitad .marco .boxDown .box-2,
+        body .mitad .marco .boxDown .box-4 {
+          border-right: 1px solid #50E3C2; }
+    body .mitad .steps {
+      display: flex;
+      justify-content: space-evenly;
+      width: 25%;
+      margin: 0px 223px;
+      padding-top: 13px;
+      margin-bottom: 15px; }
+      body .mitad .steps .boton-1,
+      body .mitad .steps .boton-2,
+      body .mitad .steps .boton-3 {
+        color: #572EE5; }
+        body .mitad .steps .boton-1 button,
+        body .mitad .steps .boton-2 button,
+        body .mitad .steps .boton-3 button {
+          font-family: 'Roboto';
+          font-weight: 200;
+          font-size: 18px;
+          text-align: center;
+          border-radius: 16px;
+          width: 32px;
+          height: 32px;
+          color: #572EE5;
+          border: 1px solid #572EE5; }
+      body .mitad .steps .btnSelected {
+        background: #572EE5;
+        color: #FFFFFF; }
+        body .mitad .steps .btnSelected button {
+          font-family: 'Roboto';
+          font-weight: 200;
+          font-size: 18px;
+          text-align: center;
+          border-radius: 16px;
+          width: 32px;
+          height: 32px;
+          border: 1px solid #572EE5; }
+    body .mitad .emptyPurple {
+      height: 6.9px;
+      width: 652px;
+      margin: 0px 0px 20px -30px;
       background: #572EE5;
-      color: #FFFFFF; }
-      .mitad .steps .btnSelected button {
-        font-family: 'Roboto';
-        font-weight: 200;
-        font-size: 18px;
-        text-align: center;
-        border-radius: 16px;
-        width: 32px;
-        height: 32px;
-        border: 1px solid #572EE5; }
-  .mitad .emptyPurple {
-    height: 6.9px;
-    width: 700px;
-    margin: 0px 0px 20px -30px;
-    background: #572EE5;
-    border-radius: 5px; }
-  .mitad .btnComenzar {
+      border-radius: 5px; }
+    body .mitad .comenzar__grabar__finalizar__subirGifo {
+      display: flex;
+      justify-content: center; }
+      body .mitad .comenzar__grabar__finalizar__subirGifo .btnComenzar {
+        border: 1px solid #572EE5;
+        border-radius: 25px;
+        width: 107px;
+        height: 34px;
+        font-size: 12px;
+        font-family: 'Montserrat';
+        font-weight: bold;
+        color: #572EE5; }
+  body .cintaFotografica {
     display: flex;
     justify-content: center;
-    border: 1px solid #572EE5;
-    border-radius: 25px;
-    width: 107px;
-    height: 34px;
-    font-size: 12px;
-    font-family: 'Montserrat';
-    font-weight: bold;
-    color: #572EE5; }
-
-.cintaFotografica {
-  display: flex;
-  justify-content: center;
-  align-items: flex-end; }
-  .cintaFotografica img {
-    height: 112px;
-    width: 135px; }
+    align-items: flex-end; }
+    body .cintaFotografica img {
+      padding-bottom: 96px;
+      margin-left: 20px;
+      height: 88px;
+      width: 142px; } }
 
 /*# sourceMappingURL=rueda.css.map */

@@ -31,7 +31,6 @@ footer {
     display: grid;
     grid-template-columns: 20% 18% 56%;
     position: relative;
-    top: 94px;
     height: 116px; }
     footer .compartirEn {
       text-align: right; }
