@@ -81,6 +81,11 @@
         body .mitad .marco .boxUp .box-4, body .mitad .marco .boxDown .box-2,
         body .mitad .marco .boxDown .box-4 {
           border-right: 1px solid #50E3C2; }
+    body .mitad #video {
+      position: absolute;
+      height: 395px;
+      width: 442px;
+      margin-left: 69px; }
     body .mitad .steps {
       display: flex;
       justify-content: space-evenly;

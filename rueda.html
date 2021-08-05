@@ -46,7 +46,7 @@
         </div>
         <div class="mitad">
             <div class="marco">
-            <video hidden id="video" autoplay></video>
+            <video  id="video" autoplay></video>
                 <div class="boxUp">
                     <div class="box-1"></div>
                     <div class="box-2"></div>
@@ -59,6 +59,14 @@
                         </div>
                         <div class="intoMarco-2">
                             ¡Crea tu GIFO en sólo 3 pasos!<br>(sólo necesitas una cámara para grabar un video)
+                        </div>
+                    </div>
+                    <div hidden id="screen_step_2">
+                        <div class="intoMarco-1">
+                            ¿Nos das acceso<br>a tu cámara?
+                        </div>
+                        <div class="intoMarco-2">
+                            El acceso a tu camara será válido sólo por el tiempo en el que estés creando el GIFO.
                         </div>
                     </div>
                 </div>
@@ -93,14 +101,14 @@
             </div>
             
             
-
-            <!--Paso2-->
-            <!-- <button type="button" id="btnGrabar" class="btnComenzar">
+<!-- 
+            Paso2 -->
+            <button hidden type="button" id="btnGrabar" class="btnComenzar">
                     Grabar
             </button>
-            <button type="button" id="btnStop" class="btnComenzar">
+            <button hidden type="button" id="btnStop" class="btnComenzar">
                     Detener
-            </button> -->
+            </button>
 
         </div>
         <div class="cintaFotografica">
