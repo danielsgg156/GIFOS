@@ -19,7 +19,7 @@
     height: 90vh;
     position: absolute;
     width: 100%;
-    margin-top: 650px;
+    top: 100%;
     background: rgba(87, 46, 229, 0.9); }
     .container .menu ul .rueda {
       display: none; }
@@ -31,10 +31,13 @@
       margin-top: 10px; }
     .container .menu ul li {
       list-style: none;
-      color: white;
       margin-top: 20px; }
       .container .menu ul li a {
-        text-decoration: none; }
+        font-family: 'Montserrat', sans-serif;
+        font-size: 13px;
+        text-decoration: none;
+        color: white;
+        cursor: pointer; }
   .container figure img {
     width: 56px;
     height: 49px;
@@ -46,26 +49,28 @@
 @media (min-width: 1024px) {
   .container .oculto {
     display: block; }
-  .container .menu {
+  .container #navmenu {
     width: auto;
     position: relative;
-    margin-top: 0%;
+    top: -20%;
     height: 0%;
     background: none;
     margin-right: 8%; }
-    .container .menu ul {
+    .container #navmenu ul {
       justify-content: space-between;
       display: flex;
-      width: 350px; }
-      .container .menu ul li {
+      width: 418px; }
+      .container #navmenu ul li a {
+        transition: all 450ms ease;
         color: #572EE5;
         margin-top: 0px;
-        font-size: 13px; }
-      .container .menu ul .linea {
+        font-size: 13px;
+        font-weight: bold; }
+      .container #navmenu ul .linea {
         display: none; }
-      .container .menu ul .rueda {
+      .container #navmenu ul .rueda {
         display: block;
-        margin-top: -20px; }
+        margin-top: 0px; }
   .container figure img {
     width: 60px;
     height: 60px;

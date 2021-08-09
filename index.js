@@ -126,7 +126,7 @@ function hideScreenStep1() {
     document.getElementById("screen_step_1").style.display = "none";
 }
 
-document.querySelector("#btnComenzar").addEventListener("click", getStream);
+
 
             // CAROUSEL CODE
 window.addEventListener('load', function() {

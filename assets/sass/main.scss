@@ -24,29 +24,28 @@ main {
 }
 
 .div-buscador-gifos {
-    justify-content: space-around;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     background: #FFFFFF;
     border: 2px solid #572EE5;
     border-radius: 27px 27px;
-    height: 40px;
+    height: 50px;
     width: 286px;
-    margin: 0px 5%;
+    margin: 0px auto;
     .lupa {
         width: 20px;
-        position: relative;
-        left: 252px;
-        bottom: -10px;
+
     }
     .divInput {
-        position: relative;
-        bottom: 25px;
+
     }
     .palabra {
         font-size: large;
         height: 22px;
-        width: 70%;
+        width: 83%;
         border: 0;
-        margin: 10px 44px;
+        margin: 0px 0px;
         outline: none;
     }
      ::placeholder {
@@ -191,328 +190,105 @@ main {
 //     text-align: center;
 // }
 
+
 // desde aquí se empiezan a editar lo media 1024px
+
 @media(min-width:1024px) {
     main {
         margin-top: 130px;
     }
-    .inspirate {
-        font-size: 35px;
-        margin: 16px 25%;
-    }
-    .divimagen {
-        img {
-            width: 399px;
-            height: 190px;
+    
+    #section-1{
+        .inspirate {
+            font-size: 35px;
+            margin: 16px 25%;
         }
-    }
-    .div-buscador-gifos {
-        height: 40px;
-        width: 551px;
-        margin: 0px 230px;
-        .palabra {
-            width: 80%;
-        }
-        .lupa {
-            left: 503px;
-        }
-    }
-    .s1reactions {
-        h3 {
-            text-align: center;
-            color: #572EE5;
-            font-family: 'Montserrat', sans-serif;
-            font-weight: bolder;
-        }
-    }
-    #section-2 {
-        #favorito {
-            .like {
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-            }
-            .emoticonHeartSmall {
-                img {
-                    width: 28px;
-                    height: 21px;
-                }
-            }
-            .favorito {
-                font-family: 'Montserrat-Bold';
-                font-size: 25px;
-                color: #572EE5;
-                font-weight: 600;
-                height: 100px;
-            }
-            .emoticonHeartBig {
-                img {
-                    width: 90px;
-                    height: 130px;
-                }
-            }
-            .save {
-                font-family: 'Montserrat-Bold';
-                font-size: 22px;
-                color: #50E3C2;
-                width: 345px;
-                height: 72px;
-                display: flex;
-                text-align: center;
-            }
-        }
-        #misGifos {
-            .crear {
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-                .emoticonSmall {
-                    img {
-                        width: 24px;
-                        height: 22px;
-                    }
-                }
-                .misGifos {
-                    font-family: 'Montserrat-Bold';
-                    font-size: 25px;
-                    color: #572EE5;
-                    line-height: 30px;
-                    font-weight: 900;
-                    height: 100px;
-                }
-                .emoticonBig {
-                    height: 160px;
-                    img {
-                        width: 100px;
-                        height: 150px;
-                    }
-                }
-                .animate {
-                    font-family: 'Montserrat-Bold';
-                    font-size: 22px;
-                    color: #50E3C2;
-                }
-            }
-        }
-        #circulo {
-            grid-template-columns: 1fr 1fr 1fr;
-            .camara {
-                display: flex;
-                justify-content: flex-end;
-            }
-            .lente {
-                width: 95px;
-            }
-            .flash {
-                width: 50px;
-                height: 400px;
-            }
-        }
-        .mitad {
-            width: 640px;
-            height: 400px;
-            // background: rgb(236, 229, 15);
-            .marco {
-                margin: auto;
-                height: 324px;
-                width: 640px;
-                border: 1px solid #572EE5;
-                .intoMarco-1 {
-                    padding-top: 7%;
-                    margin: auto;
-                    // background: gray;
-                    width: 550px;
-                    height: 70px;
-                    font-family: 'Montserrat', sans-serif;
-                    font-size: 25px;
-                    font-weight: bold;
-                    color: #572EE5;
-                    text-align: center;
-                    line-height: 35px;
-                    h1 {
-                        color: #50E3C2;
-                        display: inline;
-                    }
-                }
-                .intoMarco-2 {
-                    // background: red;
-                    width: 446px;
-                    padding-top: 1%;
-                    height: 70px;
-                    margin: auto;
-                    font-family: 'Roboto', sans-serif;
-                    font-size: 16px;
-                    color: #000000;
-                    text-align: center;
-                    line-height: 29px;
-                }
-                .box {
-                    display: flex;
-                    justify-content: space-between;
-                    .box-1,
-                    .box-2,
-                    .box-3,
-                    .box-4 {
-                        display: flex;
-                        height: 25px;
-                        width: 27px;
-                    }
-                    .box-1,
-                    .box-2 {
-                        margin: 20px 20px;
-                        border-top: 1px solid #50E3C2;
-                    }
-                    .box-3,
-                    .box-4 {
-                        margin: 20px 20px;
-                        border-bottom: 1px solid #50E3C2;
-                    }
-                    .box-1,
-                    .box-3 {
-                        border-left: 1px solid #50E3C2;
-                    }
-                    .box-2,
-                    .box-4 {
-                        border-right: 1px solid #50E3C2;
-                    }
-                }
-            }
-            .steps {
-                display: flex;
-                justify-content: space-evenly;
-                width: 25%;
-                margin: 0px 265px;
-                padding-top: 13px;
-                margin-bottom: 15px;
-                .boton-1,
-                .boton-2,
-                .boton-3 {
-                    color: #572EE5;
-                    button {
-                        font-family: 'Roboto';
-                        font-weight: 200;
-                        font-size: 18px;
-                        text-align: center;
-                        border-radius: 16px;
-                        width: 32px;
-                        height: 32px;
-                        color: #572EE5;
-                        border: 1px solid #572EE5;
-                    }
-                }
-                .btnSelected {
-                    background: #572EE5;
-                    color: #FFFFFF;
-                    button {
-                        font-family: 'Roboto';
-                        font-weight: 200;
-                        font-size: 18px;
-                        text-align: center;
-                        border-radius: 16px;
-                        width: 32px;
-                        height: 32px;
-                        border: 1px solid #572EE5;
-                    }
-                }
-            }
-            .emptyPurple {
-                height: 6.9px;
-                width: 700px;
-                margin: 0px 0px 20px -30px;
-                background: #572EE5;
-                border-radius: 5px;
-            }
-            .btnComenzar {
-                display: flex;
-                justify-content: center;
-                border: 1px solid #572EE5;
-                border-radius: 25px;
-                width: 107px;
-                height: 34px;
-                font-size: 12px;
-                font-family: 'Montserrat';
-                font-weight: bold;
-                color: #572EE5;
-            }
-        }
-        .cintaFotografica {
-            display: flex;
-            justify-content: center;
-            align-items: flex-end;
+        .divimagen {
             img {
-                height: 112px;
-                width: 135px;
+                width: 393px;
+                height: 190px;
             }
         }
-    }
-    #section-3 {
-        width: 35%;
-        height: 430px;
-        background-color: yellow;
-        margin: auto;
-        .titles-s3 {
-            width: 50%;
-            height: 30%;
-            // esto es modificable y/o borrable
-            background-color: yellowgreen;
-            margin: auto;
+        .div-buscador-gifos {
+            justify-content:space-evenly;
+            height: 40px;
+            width: 551px;
+            margin: 0px auto;
+            .divInput{
+                margin-right: 194px;
+            }
+            .palabra {
+                width: 234%;
+            }
+            .lupa {
+                // left: 503px;
+            }
         }
-        
-        // .carousel {
-        //     .carousel__contenedor{
-        //         .carousel__anterior{
-        //             .carousel__anterior {
-        //                 size: 40px 40px;
-        //                 border: 1px solid #572EE5;
-        //                 .fas {
-        //                     color: #572EE5;
-        //                 }
-        //             }
-        //         }
-        //         .carousel__lista{
-        //             .carousel__elemento{
-
-        //             }
-        //         .carousel__siguiente {
-        //             size: 40px 40px;
-        //             border: 1px solid #572EE5;
-        //             .fas {
-        //                 color: #572EE5;
-        //                 }
-        //             }
-        //         }
-        //     }
-        // }
+        .s1reactions {
+            h3 {
+                text-align: center;
+                color: #572EE5;
+                font-family: 'Montserrat', sans-serif;
+                font-weight: bolder;
+            }
+        }
+        .line{
+            margin: 7% 0% 0% 28%;
+        }
+        .palabraEnBuscador{
+            #images{
+                display: grid;
+                grid-template-columns: 1fr 1fr 1fr 1fr;
+                justify-content: center;
+                grid-gap: 32px;
+                margin: 118px;
+                img{
+                    width: 100%;
+                    height: 120px;
+                    margin: 1.1%;
+                }
+            }   
+        }
     }
 }
 
-
-// desde aquí se empiezan a editar lo media 1440px
+// desde aquí se empiezan a editar lo media 1440px solo funciona este midia hasta divimagen revizar
 @media(min-width:1440px) {
     .inspirate {
-        width: 32%;
+        width: 50%;
         font-size: 37px;
         margin: 16px 35%;
     }
-    
     .divimagen {
         img {
             width: 474px;
             height: 230px;
         }
     }
-    
     .div-buscador-gifos {
         height: 50px;
         width: 1000px;
         margin: 0px 235px;
         .palabra {
-            margin: 15px 45px;
-            width: 92%;
+            width: 300%;
         }
         .lupa {
             left: 61em;
             bottom: -14px;
+        }
+    }
+    .palabraEnBuscador{
+        #images{
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            justify-content: center;
+            grid-gap: 32px;
+            margin: 118px;
+            img{
+                width: 100%;
+                height: 200px;
+                margin: 1.1%;
+            }
         }
     }
 }
