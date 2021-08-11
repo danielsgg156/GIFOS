@@ -19,7 +19,8 @@ function getStream() {
     // hideVideo();
     hideScreenStep1();
     showScreenStep2();
-    changeClassButtonStep1();
+    addClassSelectedToStep("btn1","boton-1");
+    addClassSelectedToStep("btn2","boton-2");
     navigator.mediaDevices.getUserMedia({
             audio: false,
             video: {
@@ -29,15 +30,33 @@ function getStream() {
         .then(function(stream) {
             video.srcObject = stream;
             video.play()
-        });
+          });
+          hideBtnComenzar();
+          showBtnGrabar();
+          removeClassSelectedToStep("btn1","boton-1");
+}
+function hideBtnComenzar(){
+  document.getElementById("btnComenzar").style.display="none";
 }
 
-function changeClassButtonStep1() {
+function showBtnGrabar(){
+  document.getElementById("btnGrabar").style.display="block";
+}
+function removeClassSelectedToStep(step,stepClass){
+   // se busca elemento (boton) por su id
+   var element = document.getElementById(step);
+   // eliminar clase actual
+   element.classList.remove("btnSelected");
+   // se agrega clase nueva
+   element.classList.add(stepClass);
+}
+
+function addClassSelectedToStep(step,stepClass) {
 
     // se busca elemento (boton) por su id
-    var element = document.getElementById("btn1");
+    var element = document.getElementById(step);
     // eliminar clase actual
-    element.classList.remove("boton-1");
+    element.classList.remove(stepClass);
     // se agrega clase nueva
     element.classList.add("btnSelected");
 }
