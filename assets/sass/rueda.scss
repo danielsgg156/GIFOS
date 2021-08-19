@@ -103,44 +103,85 @@
                 width: 442px;
                 margin-left: 69px;
             }
-            .steps {
-                display: flex;
-                justify-content: space-evenly;
-                width: 25%;
-                margin: 0px 223px;
-                padding-top: 13px;
-                margin-bottom: 15px;
-                .boton-1,
-                .boton-2,
-                .boton-3 {
+            .containerBtns{
+                display: grid;
+                grid-template-columns: 1fr 1fr 1fr ;
+                
+                div{
+                    height: 23px;
+                    
+                }
+                .steps {
+                    -webkit-box-align: center;
+                    box-sizing: border-box;
+                    padding: 30px 30px;
+                    width: 100%;
+                    align-items: center;
+                    display: flex;
+                    justify-content: space-between;
+                    
+                    .boton-1,
+                    .boton-2,
+                    .boton-3 {                
+                        button {
+                            font-family: 'Montserrat';
+                            font-weight: bold;
+                            font-size: 18px;
+                            text-align: center;
+                            border-radius: 16px;
+                            width: 32px;
+                            height: 32px;
+                            color: #572EE5;
+                            border: 1px solid #572EE5;
+                        }
+                        button:hover {
+                            color: white;
+                            background-color: #572EE5;
+                        }
+                    }
+                    .btnSelected {
+                        background: #572EE5;
+                        color: #FFFFFF;
+                        button {
+                            font-family: 'Roboto';
+                            font-weight: 200;
+                            font-size: 18px;
+                            text-align: center;
+                            border-radius: 16px;
+                            width: 32px;
+                            height: 32px;
+                            border: 1px solid #572EE5;
+                        }
+                    }
+                }
+                .containerTimer{
+                    // background-color: #50E3C2;
+                    font-family: 'Montserrat';
+                    font-weight: bold;
+                    font-size: 20px;
                     color: #572EE5;
-                    button {
-                        font-family: 'Roboto';
-                        font-weight: 200;
-                        font-size: 18px;
-                        text-align: center;
-                        border-radius: 16px;
-                        width: 32px;
-                        height: 32px;
+                    letter-spacing: 0;
+                    text-align: center;
+                    line-height: 46px;
+                    display: flex;
+                    justify-content: flex-end;
+                    margin: 11px;           
+                }
+                .btnRepeat{
+                    
+                    
+                    .repeatCapture{
+                        font-family: 'Montserrat';
+                        font-weight: bold;
                         color: #572EE5;
-                        border: 1px solid #572EE5;
+                        border: none;
                     }
                 }
-                .btnSelected {
-                    background: #572EE5;
-                    color: #FFFFFF;
-                    button {
-                        font-family: 'Roboto';
-                        font-weight: 200;
-                        font-size: 18px;
-                        text-align: center;
-                        border-radius: 16px;
-                        width: 32px;
-                        height: 32px;
-                        border: 1px solid #572EE5;
-                    }
-                }
+
+
             }
+                
+            
             .emptyPurple {
                 height: 6.9px;
                 width: 652px;
@@ -160,6 +201,10 @@
                     font-family: 'Montserrat';
                     font-weight: bold;
                     color: #572EE5;
+                }
+                .btnComenzar:hover{
+                    color: white;
+                    background-color: #572EE5;
                 }
             }
         }

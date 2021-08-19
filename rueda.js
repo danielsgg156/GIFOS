@@ -21,6 +21,7 @@ function getStream() {
     showScreenStep2();
     addClassSelectedToStep("btn1","boton-1");
     addClassSelectedToStep("btn2","boton-2");
+    addClassSelectedToStep("btn3","boton-3");
     navigator.mediaDevices.getUserMedia({
             audio: false,
             video: {

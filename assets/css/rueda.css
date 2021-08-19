@@ -86,22 +86,24 @@
       height: 395px;
       width: 442px;
       margin-left: 69px; }
-    body .mitad .steps {
-      display: flex;
-      justify-content: space-evenly;
-      width: 25%;
-      margin: 0px 223px;
-      padding-top: 13px;
-      margin-bottom: 15px; }
-      body .mitad .steps .boton-1,
-      body .mitad .steps .boton-2,
-      body .mitad .steps .boton-3 {
-        color: #572EE5; }
-        body .mitad .steps .boton-1 button,
-        body .mitad .steps .boton-2 button,
-        body .mitad .steps .boton-3 button {
-          font-family: 'Roboto';
-          font-weight: 200;
+    body .mitad .containerBtns {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr; }
+      body .mitad .containerBtns div {
+        height: 23px; }
+      body .mitad .containerBtns .steps {
+        -webkit-box-align: center;
+        box-sizing: border-box;
+        padding: 30px 30px;
+        width: 100%;
+        align-items: center;
+        display: flex;
+        justify-content: space-between; }
+        body .mitad .containerBtns .steps .boton-1 button,
+        body .mitad .containerBtns .steps .boton-2 button,
+        body .mitad .containerBtns .steps .boton-3 button {
+          font-family: 'Montserrat';
+          font-weight: bold;
           font-size: 18px;
           text-align: center;
           border-radius: 16px;
@@ -109,18 +111,39 @@
           height: 32px;
           color: #572EE5;
           border: 1px solid #572EE5; }
-      body .mitad .steps .btnSelected {
-        background: #572EE5;
-        color: #FFFFFF; }
-        body .mitad .steps .btnSelected button {
-          font-family: 'Roboto';
-          font-weight: 200;
-          font-size: 18px;
-          text-align: center;
-          border-radius: 16px;
-          width: 32px;
-          height: 32px;
-          border: 1px solid #572EE5; }
+        body .mitad .containerBtns .steps .boton-1 button:hover,
+        body .mitad .containerBtns .steps .boton-2 button:hover,
+        body .mitad .containerBtns .steps .boton-3 button:hover {
+          color: white;
+          background-color: #572EE5; }
+        body .mitad .containerBtns .steps .btnSelected {
+          background: #572EE5;
+          color: #FFFFFF; }
+          body .mitad .containerBtns .steps .btnSelected button {
+            font-family: 'Roboto';
+            font-weight: 200;
+            font-size: 18px;
+            text-align: center;
+            border-radius: 16px;
+            width: 32px;
+            height: 32px;
+            border: 1px solid #572EE5; }
+      body .mitad .containerBtns .containerTimer {
+        font-family: 'Montserrat';
+        font-weight: bold;
+        font-size: 20px;
+        color: #572EE5;
+        letter-spacing: 0;
+        text-align: center;
+        line-height: 46px;
+        display: flex;
+        justify-content: flex-end;
+        margin: 11px; }
+      body .mitad .containerBtns .btnRepeat .repeatCapture {
+        font-family: 'Montserrat';
+        font-weight: bold;
+        color: #572EE5;
+        border: none; }
     body .mitad .emptyPurple {
       height: 6.9px;
       width: 652px;
@@ -139,6 +162,9 @@
         font-family: 'Montserrat';
         font-weight: bold;
         color: #572EE5; }
+      body .mitad .comenzar__grabar__finalizar__subirGifo .btnComenzar:hover {
+        color: white;
+        background-color: #572EE5; }
   body .cintaFotografica {
     display: flex;
     justify-content: center;
