@@ -36,7 +36,7 @@ function getStream() {
     showBtnGrabar();
 }
 
-function startTimer() {
+function grabar() {
     // quitar seleccion al boton #1
     removeClassSelectedToStep("btn1", "boton-1");
 
@@ -51,10 +51,8 @@ function startTimer() {
 
     document.getElementById("btnGrabar").style.display = "none";
     document.getElementById("btnFinalizar").style.display = "block";
-}
 
-function initRecorder() {
-
+    //TODO implement
 }
 
 const parseTime = function(time) {
@@ -81,7 +79,7 @@ function activeTimer() {
 }
 
 
-function finishRecord() {
+function finalizar() {
     //oculta boton finalizar
     document.getElementById("btnFinalizar").style.display = "none";
     // mostrar boton sbir gifos
@@ -133,5 +131,5 @@ function showScreenStep2() {
 }
 
 document.querySelector("#btnComenzar").addEventListener("click", getStream);
-document.querySelector("#btnGrabar").addEventListener("click", startTimer);
-document.querySelector("#btnFinalizar").addEventListener("click", finishRecord);
+document.querySelector("#btnGrabar").addEventListener("click", grabar);
+document.querySelector("#btnFinalizar").addEventListener("click", finalizar);
