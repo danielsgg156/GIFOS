@@ -1,7 +1,6 @@
-// #misGifos{
-//     display: none;
-// }
 #misGifos {
+    margin-top: 34%;
+    height: 505px;
     .crear {
         display: flex;
         flex-direction: column;
@@ -12,5 +11,92 @@
                 height: 22px;
             }
         }
+        .misGifosTxt{
+            font-family: 'Montserrat', sans-serif;
+            font-size: 20px;
+            font-weight: bold;
+            color: #572EE5;
+            text-align: center;
+            margin: 2% 0% 15% 0%
+        }
+        .animate{
+            width: 60%;
+            font-family: 'Montserrat', sans-serif;
+            font-size: 22px;
+            font-weight: bold;
+            color: #50E3C2;
+            text-align: center;
+            margin: 2% 0% 15% 0%
+        }
     }
 } 
+
+
+footer{
+    .compartirEn{
+        font-family: 'Roboto Mono', monospace;
+        font-size: 15px;
+        font-weight: 1px;
+    }
+    width: auto;
+    height: 196px;
+    text-align: center;
+    align-items: center; 
+    border-bottom: 5px solid #572EE5;
+
+    .social-btns{
+        display: flex;
+        justify-content: center;
+        justify-content: space-evenly;
+        margin: 8% 35%;
+        i{
+            color: #CDD6E0;
+            font-size: 20px;
+        }
+    }
+    .rightsReserved{
+        font-family: 'Roboto', sans-serif;
+        font-size: 14px;
+        font-weight: 200;
+        margin-top: 58px;
+    }
+}
+@media(min-width:1024px){
+    footer{
+        .compartirEn{
+            font-family: 'Roboto', sans-serif;
+        }
+        display: grid;
+        grid-template-columns: 20% 18% 56%;
+        position: relative;
+        // top: 94px;
+        height: 116px;
+        .compartirEn{
+            text-align: right;
+        }
+    
+        .social-btns{
+            margin-left: 10px;
+            a{
+               
+                .fa-twitter{
+                    color: #572EE5
+                }
+            }
+        }
+        .rightsReserved{
+            text-align: right;
+            margin-bottom: 7%;
+        }    
+    }
+}
+
+
+
+
+@media(min-width:1024px){
+    #misGifos{
+        display: flex;
+    }
+}
+

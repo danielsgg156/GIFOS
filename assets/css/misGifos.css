@@ -1,9 +1,72 @@
-#misGifos .crear {
-  display: flex;
-  flex-direction: column;
-  align-items: center; }
-  #misGifos .crear .emoticonSmall img {
-    width: 24px;
-    height: 22px; }
+#misGifos {
+  margin-top: 34%;
+  height: 505px; }
+  #misGifos .crear {
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+    #misGifos .crear .emoticonSmall img {
+      width: 24px;
+      height: 22px; }
+    #misGifos .crear .misGifosTxt {
+      font-family: 'Montserrat', sans-serif;
+      font-size: 20px;
+      font-weight: bold;
+      color: #572EE5;
+      text-align: center;
+      margin: 2% 0% 15% 0%; }
+    #misGifos .crear .animate {
+      width: 60%;
+      font-family: 'Montserrat', sans-serif;
+      font-size: 22px;
+      font-weight: bold;
+      color: #50E3C2;
+      text-align: center;
+      margin: 2% 0% 15% 0%; }
+
+footer {
+  width: auto;
+  height: 196px;
+  text-align: center;
+  align-items: center;
+  border-bottom: 5px solid #572EE5; }
+  footer .compartirEn {
+    font-family: 'Roboto Mono', monospace;
+    font-size: 15px;
+    font-weight: 1px; }
+  footer .social-btns {
+    display: flex;
+    justify-content: center;
+    justify-content: space-evenly;
+    margin: 8% 35%; }
+    footer .social-btns i {
+      color: #CDD6E0;
+      font-size: 20px; }
+  footer .rightsReserved {
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    font-weight: 200;
+    margin-top: 58px; }
+
+@media (min-width: 1024px) {
+  footer {
+    display: grid;
+    grid-template-columns: 20% 18% 56%;
+    position: relative;
+    height: 116px; }
+    footer .compartirEn {
+      font-family: 'Roboto', sans-serif; }
+    footer .compartirEn {
+      text-align: right; }
+    footer .social-btns {
+      margin-left: 10px; }
+      footer .social-btns a .fa-twitter {
+        color: #572EE5; }
+    footer .rightsReserved {
+      text-align: right;
+      margin-bottom: 7%; } }
+@media (min-width: 1024px) {
+  #misGifos {
+    display: flex; } }
 
 /*# sourceMappingURL=misGifos.css.map */
