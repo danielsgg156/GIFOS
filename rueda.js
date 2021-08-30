@@ -4,8 +4,8 @@ const navMenu = document.getElementById("navmenu");
 const buscador = document.getElementById("section-1");
 const video = document.getElementById("video");
 const ComenzarGrabacion = document.getElementById("comenzarGrabacion");
-
-
+const labelTimer = document.getElementById("timer");
+let timer = null;
 menuHamburguesa.addEventListener("click", () => {
     btnIcono.classList.toggle("fa-bars");
     btnIcono.classList.toggle("fa-times");
@@ -19,9 +19,9 @@ function getStream() {
     // hideVideo();
     hideScreenStep1();
     showScreenStep2();
-    addClassSelectedToStep("btn1","boton-1");
-    addClassSelectedToStep("btn2","boton-2");
-    addClassSelectedToStep("btn3","boton-3");
+    addClassSelectedToStep("btn1", "boton-1");
+    //    addClassSelectedToStep("btn2", "boton-2");
+    //    addClassSelectedToStep("btn3", "boton-3");
     navigator.mediaDevices.getUserMedia({
             audio: false,
             video: {
@@ -31,28 +31,88 @@ function getStream() {
         .then(function(stream) {
             video.srcObject = stream;
             video.play()
-          });
-          hideBtnComenzar();
-          showBtnGrabar();
-          removeClassSelectedToStep("btn1","boton-1");
-}
-function hideBtnComenzar(){
-  document.getElementById("btnComenzar").style.display="none";
+        });
+    hideBtnComenzar();
+    showBtnGrabar();
 }
 
-function showBtnGrabar(){
-  document.getElementById("btnGrabar").style.display="block";
-}
-function removeClassSelectedToStep(step,stepClass){
-   // se busca elemento (boton) por su id
-   var element = document.getElementById(step);
-   // eliminar clase actual
-   element.classList.remove("btnSelected");
-   // se agrega clase nueva
-   element.classList.add(stepClass);
+function startTimer() {
+    // quitar seleccion al boton #1
+    removeClassSelectedToStep("btn1", "boton-1");
+
+    //agregar seleccion al boton #2
+    addClassSelectedToStep("btn2", "boton-2");
+
+    //mostrar contador de tiempo para
+    document.getElementById("timer").style.display = "block";
+
+    // Iniciar contador de cornometro
+    activeTimer();
+
+    document.getElementById("btnGrabar").style.display = "none";
+    document.getElementById("btnFinalizar").style.display = "block";
 }
 
-function addClassSelectedToStep(step,stepClass) {
+function initRecorder() {
+
+}
+
+const parseTime = function(time) {
+    const hours = Math.floor(time / 3600);
+    time %= 3600;
+    const minutes = Math.floor(time / 60);
+    time %= 60;
+    const seconds = time;
+
+    const strHours = ('00' + hours).substr(-2, 2);
+    const strMinutes = ('00' + minutes).substr(-2, 2);
+    const strSeconds = ('00' + seconds).substr(-2, 2);
+
+    return `${strHours}:${strMinutes}:${strSeconds}`;
+};
+
+function activeTimer() {
+    let counter = 0;
+
+    timer = setInterval(() => {
+        counter++;
+        labelTimer.textContent = parseTime(counter);
+    }, 1000);
+}
+
+
+function finishRecord() {
+    //oculta boton finalizar
+    document.getElementById("btnFinalizar").style.display = "none";
+    // mostrar boton sbir gifos
+    document.getElementById("btnSubirGifo").style.display = "block";
+    //ocultar contador de tiempo 
+    document.getElementById("timer").style.display = "none";
+    //mostrar repetir captura 
+    document.getElementById("repeatCapture").style.display = "block";
+
+    //TODO: subir gifo
+    //stream del gifo grabado
+}
+
+function hideBtnComenzar() {
+    document.getElementById("btnComenzar").style.display = "none";
+}
+
+function showBtnGrabar() {
+    document.getElementById("btnGrabar").style.display = "block";
+}
+
+function removeClassSelectedToStep(step, stepClass) {
+    // se busca elemento (boton) por su id
+    var element = document.getElementById(step);
+    // eliminar clase actual
+    element.classList.remove("btnSelected");
+    // se agrega clase nueva
+    element.classList.add(stepClass);
+}
+
+function addClassSelectedToStep(step, stepClass) {
 
     // se busca elemento (boton) por su id
     var element = document.getElementById(step);
@@ -73,5 +133,5 @@ function showScreenStep2() {
 }
 
 document.querySelector("#btnComenzar").addEventListener("click", getStream);
-
-
+document.querySelector("#btnGrabar").addEventListener("click", startTimer);
+document.querySelector("#btnFinalizar").addEventListener("click", finishRecord);
