@@ -140,10 +140,10 @@
                         }
                     }
                     .btnSelected {
-                        background: #572EE5;
-                        color: #FFFFFF;
                         button {
-                            font-family: 'Roboto';
+                            background: #572EE5;
+                            color: #FFFFFF;
+                            font-family: 'Montserrat';
                             font-weight: 200;
                             font-size: 18px;
                             text-align: center;
@@ -155,12 +155,10 @@
                     }
                 }
                 .containerTimer{
-                    // background-color: #50E3C2;
                     font-family: 'Montserrat';
                     font-weight: bold;
                     font-size: 20px;
                     color: #572EE5;
-                    letter-spacing: 0;
                     text-align: center;
                     line-height: 46px;
                     display: flex;
@@ -175,6 +173,7 @@
                         font-weight: bold;
                         color: #572EE5;
                         border: none;
+                        margin-top: 10%
                     }
                 }
 

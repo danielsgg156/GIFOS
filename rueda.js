@@ -5,7 +5,21 @@ const buscador = document.getElementById("section-1");
 const video = document.getElementById("video");
 const ComenzarGrabacion = document.getElementById("comenzarGrabacion");
 const labelTimer = document.getElementById("timer");
+const config_recordrtc = {
+	type: 'gif',
+	frameRate: 1,
+	quality: 10,
+	width: 360,
+	hidden: 240,
+	onGifRecordingStarted: function () {
+		console.log('started');
+	},
+};
 let timer = null;
+let stream = null;
+let recorder = null;
+let blob = null;
+
 menuHamburguesa.addEventListener("click", () => {
     btnIcono.classList.toggle("fa-bars");
     btnIcono.classList.toggle("fa-times");
